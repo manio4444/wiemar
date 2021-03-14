@@ -32,3 +32,9 @@ admin-dev/import/
 download/
 /img/*
 upload/
+
+
+# Custom
+.idea
+/themes/*
+!/themes/wiemar
