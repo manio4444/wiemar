@@ -1,0 +1,19 @@
+{
+  "name": "wiemar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manio4444/wiemar.git"
+  },
+  "author": "studiocitrus.pl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manio4444/wiemar/issues"
+  },
+  "homepage": "https://github.com/manio4444/wiemar#readme"
+}
