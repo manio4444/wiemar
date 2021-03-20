@@ -38,3 +38,4 @@ upload/
 .idea
 /themes/*
 !/themes/wiemar
+/themes/wiemar/_dev/node_modules/
