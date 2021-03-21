@@ -554,7 +554,7 @@
     text-transform: uppercase;
     color: white;
     margin-top: $small-space;
-    font-size: $base-font-size;
+    font-size: 9px;
 
     @include box-shadow-light;
     &.online-only {
@@ -578,8 +578,7 @@
     }
     &.on-sale {
       order: -1;
-      background: $brand-secondary;
-      width: 100%;
+      background: $promocja-bgn;
       text-align: center;
       margin-top: 0 !important;
     }
