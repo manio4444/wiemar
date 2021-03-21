@@ -4,11 +4,15 @@
 
 * prestashop_1.7.7.2
 * PHP 7.1	-	7.3
-* node 15.11.0 preferred
-* gulp cli (just run gulp)
-* theme assets only in repo, needs running pre set prestashop, which gulp is pushing files on change (watcher)
+* node 10
+* theme assets only in repo, needs running pre set prestashop
+* theme compiled with default webpack setup of classic theme
 
 ## Troubleshooting
+
+### Compiling theme under Windows
+
+https://stackoverflow.com/questions/63454346/how-must-a-development-environment-be-set-up-to-build-prestashop-theme-assets
 
 
 ### ps_emailalerts:
