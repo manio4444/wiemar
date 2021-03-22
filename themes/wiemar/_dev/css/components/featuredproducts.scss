@@ -11,11 +11,9 @@ $product-description-height: 70px;
     display: block;
   }
   .product-title a {
-    color: $gray;
-    font-size: $font-size-sm;
+    color: $product-title-color;
     text-decoration: none;
-    text-align: center;
-    font-weight: 400;
+    font-weight: 700;
   }
   .thumbnail-container {
     position: relative;
@@ -23,8 +21,8 @@ $product-description-height: 70px;
     height: 318px;
     width: $thumbnail-size;
     background: white;
-    @include box-shadow;
     &:hover, &:focus {
+      @include box-shadow;
       .highlighted-informations {
         bottom: 5.5rem;
         &::after {
@@ -33,15 +31,6 @@ $product-description-height: 70px;
         &.no-variants{
           bottom: 4.2rem;
         }
-      }
-      .product-description::after{
-        content: "";
-        border-top: $gray 1px solid;
-        position: absolute;
-        width: 80%;
-        top: 0;
-        left: 10%;
-        opacity: .25;
       }
     }
     .product-thumbnail {
@@ -64,14 +53,12 @@ $product-description-height: 70px;
     margin-bottom: 1.5rem;
   }
   .product-title {
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: .7rem;
+    margin: 16px 0;
+    font-size: 12px;
   }
   .product-price-and-shipping {
-    color: $gray-darker;
-    font-weight: 700;
-    text-align: center;
+    color: $product-price-and-shipping-color;
+    font-weight: 400;
     .discount-product {
       display: none;
     }
@@ -112,6 +99,7 @@ $product-description-height: 70px;
     width: $thumbnail-size;
     bottom: 0;
     height: $product-description-height;
+    font-size: $product-description-size;
   }
 
   .product-miniature {
@@ -119,7 +107,6 @@ $product-description-height: 70px;
     .product-flags {
       li.product-flag {
         min-width: 3.125rem;
-        min-height: 1.875rem;
         font-weight: 600;
         &.online-only {
           top: 13.1rem;
@@ -132,7 +119,7 @@ $product-description-height: 70px;
     color: $gray;
   }
   .regular-price {
-    color: $gray;
+    color: $product-price-regular;
     text-decoration: line-through;
     font-size: $font-size-sm;
     display: inline-block;

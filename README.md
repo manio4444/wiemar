@@ -5,7 +5,7 @@
 * prestashop_1.7.7.2
 * PHP 7.1	-	7.3
 * node 10
-* theme assets only in repo, needs running pre set prestashop
+* theme files only in repo, needs running pre set prestashop
 * theme compiled with default webpack setup of classic theme
 
 ## Troubleshooting
