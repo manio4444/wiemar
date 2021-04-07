@@ -584,6 +584,9 @@
       text-align: center;
       margin-top: 0 !important;
     }
+    &.new {
+      background: $new-bgn;
+    }
   }
 }
 

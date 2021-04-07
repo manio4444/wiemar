@@ -24,13 +24,7 @@ $product-description-height: 70px;
     &:hover, &:focus {
       @include box-shadow;
       .highlighted-informations {
-        bottom: 5.5rem;
-        &::after {
-          opacity: 1;
-        }
-        &.no-variants{
-          bottom: 4.2rem;
-        }
+        opacity: 1;
       }
     }
     .product-thumbnail {
@@ -74,28 +68,35 @@ $product-description-height: 70px;
   }
   .highlighted-informations {
     position: absolute;
-    bottom: 1.25rem;
-    padding-top: 0.625rem;
+    bottom: 4.25rem;
+    right: 0;
     z-index: 2;
-    background: white;
-    text-align: center;
-    width: $thumbnail-size;
-    height: 3.125rem;
-    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
-    transition: bottom .3s;
+    transition: opacity .3s;
+    opacity: 0;
+
     .quick-view {
-      color: $gray;
-      font-size: $base-font-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid $product-box-quicklook-color;
+      transition: background-color .2s;
+      i {
+        color: $product-box-quicklook-color;
+      }
       &:hover {
-        color: $brand-primary;
+        background-color: $product-box-quicklook-color;
+        i {
+          color: white;
+        }
       }
     }
   }
 
   .product-description {
-    position: absolute;
-    z-index: 3;
-    background: white;
     width: $thumbnail-size;
     bottom: 0;
     height: $product-description-height;
@@ -121,8 +122,21 @@ $product-description-height: 70px;
   .regular-price {
     color: $product-price-regular;
     text-decoration: line-through;
-    font-size: $font-size-sm;
+    font-size: 16px;
     display: inline-block;
+    margin-right: 22px;
+  }
+  .price {
+    .amount {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  .tax-long {
+    text-transform: lowercase;
+    &::before {
+      content: "/";
+    }
   }
   .count {
     color: $gray;

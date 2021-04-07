@@ -6,7 +6,15 @@
 * PHP 7.1	-	7.3
 * node 10
 * theme files only in repo, needs running pre set prestashop
-* theme compiled with default webpack setup of classic theme
+* theme compiled with [default webpack setup of classic theme]( https://devdocs.prestashop.com/1.7/development/compile-assets/#compiling-assets)
+
+### Compilation
+
+```
+cd themes/wiemar/_dev
+
+npm run build
+```
 
 ## Troubleshooting
 

@@ -68,7 +68,9 @@
 
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
-              <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
+              {assign var='priceAmountString' value=$product.price_amount|replace:'.':','}
+
+              <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}"><span class="amount">{$priceAmountString}</span>{$product.price|replace: $priceAmountString: ''}</span><span class="tax-long">{$product.labels.tax_long}</span>
               <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="invisible">
                 <meta itemprop="priceCurrency" content="{$currency.iso_code}" />
                 <meta itemprop="price" content="{$product.price_amount}" />
@@ -90,8 +92,8 @@
 
       <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
         {block name='quick_view'}
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
+          <a class="quick-view" href="#" data-link-action="quickview" alt="{l s='Quick view' d='Shop.Theme.Actions'}">
+            <i class="material-icons">remove_red_eye</i>
           </a>
         {/block}
 
