@@ -39,3 +39,7 @@ upload/
 /themes/*
 !/themes/wiemar
 /themes/wiemar/_dev/node_modules/
+#temp through dev process
+
+/themes/wiemar/assets/css/theme.css
+/themes/wiemar/assets/css/theme.js
