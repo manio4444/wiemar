@@ -62,7 +62,12 @@ $NotoSansVersion: "1.0.1";
 
 // added
 
+$brand-orange: #fa9623;
+
 $wrapper-bgn: #fff;
+$header-menu-bgn: #f2f2f2;
+$header-menu-items-color: #3c3c3c;
+$link-hover-color: $brand-orange;
 $promocja-bgn: #f02f2f;
 $new-bgn: #59ce5c;
 $product-description-size: 12px;
@@ -70,4 +75,4 @@ $product-title-color: #0e0e0e;
 $product-price-and-shipping-color: #3c3c3c;
 $product-price-regular: #7D7D7D;
 $product-box-quicklook-color: #9d9d9d;
-$product-box-buybtn-color: #fa9623;
+$product-box-buybtn-color: $brand-orange;

@@ -32,14 +32,7 @@
   <nav class="header-nav">
     <div class="container">
       <div class="row">
-        <div class="hidden-sm-down">
-          <div class="col-md-5 col-xs-12">
-            {hook h='displayNav1'}
-          </div>
-          <div class="col-md-7 right-nav">
-              {hook h='displayNav2'}
-          </div>
-        </div>
+
         <div class="hidden-md-up text-sm-center mobile">
           <div class="float-xs-left" id="menu-icon">
             <i class="material-icons d-inline">&#xE5D2;</i>
@@ -71,8 +64,33 @@
                 </a>
             {/if}
         </div>
-        <div class="col-md-10 col-sm-12 position-static">
+        <div class="col-md-8 col-sm-12 position-static">
           {hook h='displayTop'}
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-md-2 hidden-sm-down">
+        {hook h='displayNav1'}
+        {hook h='displayNav2'}
+        </div>
+      </div>
+      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
+        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+        <div class="js-top-menu-bottom">
+          <div id="_mobile_currency_selector"></div>
+          <div id="_mobile_language_selector"></div>
+          <div id="_mobile_contact_link"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-top-menu">
+    <div class="container">
+       <div class="row">
+        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+
+        </div>
+        <div class="col-sm-12">
+          {hook h='displayTop2'}
           <div class="clearfix"></div>
         </div>
       </div>
