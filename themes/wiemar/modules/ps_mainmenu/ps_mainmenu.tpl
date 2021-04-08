@@ -24,7 +24,7 @@
               </a>
               {if $node.children|count}
               <div {if $depth === 0} class="sub-menu{* js-sub-menu*} collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
-                {if $depth === 0}<span class="title">{$node.label}</span>{/if}
+                {if $depth === 0}<div class="title">{$node.label}</div>{/if}
                 {menu nodes=$node.children depth=$node.depth parent=$node}
               </div>
               {/if}
