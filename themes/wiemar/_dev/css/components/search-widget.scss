@@ -51,6 +51,7 @@
 }
 @include media-breakpoint-up(md) {
   .search-widget {
-    min-width: 15.63rem;
+    width: 100%;
+    max-width: 600px;
   }
 }

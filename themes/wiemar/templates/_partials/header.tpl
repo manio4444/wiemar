@@ -51,7 +51,7 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+        <div class="col-md-4 hidden-sm-down" id="_desktop_logo">
             {if $page.page_name == 'index'}
               <h1>
                 <a href="{$urls.base_url}">
@@ -64,11 +64,11 @@
                 </a>
             {/if}
         </div>
-        <div class="col-md-8 col-sm-12 position-static">
+        <div class="col-md-4 col-sm-12 col-search-widget">
           {hook h='displayTop'}
           <div class="clearfix"></div>
         </div>
-        <div class="col-md-2 hidden-sm-down">
+        <div class="col-md-4 hidden-sm-down col-right-useractions">
         {hook h='displayNav1'}
         {hook h='displayNav2'}
         </div>

@@ -36,7 +36,8 @@
         d='Shop.Theme.Global'
       }
     {else}
-      <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a>
+      {* <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme.Global'}</a> *}
+      <a href="{$urls.pages.contact}">Kontakt</a>
     {/if}
   </div>
 </div>
