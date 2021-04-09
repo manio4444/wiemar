@@ -44,6 +44,25 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-orange">
+          Wysyłka kurierem DPD realizowana do godziny 12:00
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-md-8 col-sm-12 col-gray">
+          <div class="delivery-time text-uppercase">
+            <i class="material-icons text-orange">airport_shuttle</i>
+            <span><b>06</b>h <b>28</b>min</span>
+          </div>
+          <div class="right-side">
+            <a class="newsletter-link text-orange text-uppercase" href="#"><b>Newsletter</b></a>
+            {hook h='displayNav1'}
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 {/block}
 
@@ -51,7 +70,7 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-4 hidden-sm-down" id="_desktop_logo">
+        <div class="col-md-4 hidden-sm-down col-logo" id="_desktop_logo">
             {if $page.page_name == 'index'}
               <h1>
                 <a href="{$urls.base_url}">
@@ -69,8 +88,12 @@
           <div class="clearfix"></div>
         </div>
         <div class="col-md-4 hidden-sm-down col-right-useractions">
-        {hook h='displayNav1'}
-        {hook h='displayNav2'}
+          <div id="_desktop_contact_link">
+            <div id="contact-link">
+              <a href="{$urls.pages.contact}">Kontakt</a>
+            </div>
+          </div>
+          {hook h='displayNav2'}
         </div>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
