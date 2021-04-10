@@ -17,15 +17,17 @@
         content: '';
         background-position: center;
         background-repeat: no-repeat;
-        background-size: auto 32px;
-        width: 32px;
-        height: 32px;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
       }
-      &[id^="category-"]::before { background-image: url(../img-cat-menu/battery-medium.svg); }
-      &[id^="category-"]::before { background-image: url(../img-cat-menu/battery-medium.svg); }
-      &[id^="category-"]::before { background-image: url(../img-cat-menu/battery-medium.svg); }
-      &[id^="category-"]::before { background-image: url(../img-cat-menu/battery-medium.svg); }
-      &[id^="category-"]::before { background-image: url(../img-cat-menu/battery-medium.svg); }
+      &[id^="category-1"]::before { background-image: url(../img-cat-menu/002-smartphone.svg); }
+      &[id^="category-2"]::before { background-image: url(../img-cat-menu/004-smartphone-2.svg); }
+      &[id^="category-3"]::before { background-image: url(../img-cat-menu/003-smartphone-1.svg); }
+      &[id^="category-4"]::before { background-image: url(../img-cat-menu/001-usb.svg); }
+      &[id^="category-5"]::before { background-image: url(../img-cat-menu/002-battery.svg); }
+      &[id^="category-6"]::before { background-image: url(../img-cat-menu/004-charger.svg); }
+      &[id^="category-7"]::before { background-image: url(../img-cat-menu/005-cpu.svg); }
 
       &:hover {
         background-color: #fff;
@@ -92,12 +94,12 @@
       background-repeat: no-repeat;
       pointer-events: none;
 
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/battery-medium.svg); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/battery-medium.svg); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/battery-medium.svg); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/battery-medium.svg); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/battery-medium.svg); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/battery-medium.svg); }
+      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
+      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
+      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
+      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
+      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
+      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
 
     }
 
