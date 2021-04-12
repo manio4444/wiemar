@@ -30,7 +30,7 @@
   </div>
 </div>
 <div class="footer-container">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       {block name='hook_footer'}
         {hook h='displayFooter'}

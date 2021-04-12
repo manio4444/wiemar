@@ -24,13 +24,13 @@
  *}
 
 <div id="search_filters_brands">
-  <section class="facet">
+  <section class="container">
     {* <h1 class="h6 text-uppercase facet-label">
       {if $display_link_brand}<a href="{$page_link}" title="{l s='Brands' d='Shop.Theme.Catalog'}">{/if}
         {l s='Brands' d='Shop.Theme.Catalog'}
       {if $display_link_brand}</a>{/if}
     </h1> *}
-    <div>
+    <div class="row">
       {if $brands}
         {include file="module:ps_brandlist/views/templates/_partials/$brand_display_type.tpl" brands=$brands}
       {else}
