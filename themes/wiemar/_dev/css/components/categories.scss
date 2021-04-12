@@ -145,9 +145,9 @@
     box-shadow: 1px 1px 1px 1px $gray-light;
   }
 }
-#search_filters,
-#search_filters_brands,
-#search_filters_suppliers {
+#search_filters {
+//#search_filters_brands,
+//#search_filters_suppliers {
   @include box-shadow;
   margin-bottom: 1.563rem;
   background: white;
@@ -171,15 +171,15 @@
     }
   }
 }
-#search_filters_brands,
-#search_filters_suppliers {
-  .facet {
-    padding-top: 0;
-    .facet-label {
-      margin-bottom: 0.3125rem;
-    }
-  }
-}
+//#search_filters_brands {
+//#search_filters_suppliers {
+//  .facet {
+//    padding-top: 0;
+//    .facet-label {
+//      margin-bottom: 0.3125rem;
+//    }
+//  }
+//}
 .pagination {
   width: 100%;
   > div:first-child{

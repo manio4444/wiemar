@@ -49,6 +49,8 @@ import './lib/jquery.scrollbox.min';
 import './components/block-cart';
 import $ from 'jquery';
 
+import Swiper from 'swiper/bundle';
+
 // "inherit" EventEmitter
 for (const i in EventEmitter.prototype) {
   prestashop[i] = EventEmitter.prototype[i];
@@ -79,4 +81,15 @@ $(document).ready(() => {
     },
     allowPageScroll: 'vertical',
   });
+});
+
+
+let swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });

@@ -23,14 +23,17 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<ul>
-  {foreach from=$brands item=brand name=brand_list}
-    {if $smarty.foreach.brand_list.iteration <= $text_list_nb}
-      <li class="facet-label">
-        <a href="{$brand['link']}" title="{$brand['name']}">
-          {$brand['name']}
-        </a>
-      </li>
-    {/if}
-  {/foreach}
-</ul>
+<div class="swiper-container">
+  <ul class="swiper-wrapper">
+    {foreach from=$brands item=brand name=brand_list}
+      {if $smarty.foreach.brand_list.iteration <= $text_list_nb}
+        <li class="facet-label swiper-slide">
+          <a href="{$brand['link']}" title="{$brand['name']}">
+            <img src="{__PS_BASE_URI__}img/m/{$brand['id_manufacturer']}.jpg">
+            {* {$brand['name']} *}
+          </a>
+        </li>
+      {/if}
+    {/foreach}
+  </ul>
+</div>
