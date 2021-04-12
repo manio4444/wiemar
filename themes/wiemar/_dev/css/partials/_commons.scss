@@ -61,12 +61,21 @@ p {
   font-weight: $headings-font-weight;
   color: $gray-darker;
 }
+.btn-primary {
+  background-color: $brand-orange;
+}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  background-color: darken($brand-orange, 10%);
+
+}
 .btn-primary,
 .btn-secondary {
-  @include box-shadow-light;
+  //@include box-shadow-light;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 0.5rem 1.25rem;
+  padding: 10px 32px;
+  font-size: 12px;
+  border-radius: 40px;
   .material-icons {
     margin-right: $small-space;
   }

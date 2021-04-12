@@ -176,13 +176,35 @@
 /*** WRAPPER ***/
 #wrapper {
   background: $wrapper-bgn;
-  box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.11);
-  padding-top: 1.563rem;
+  //box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.11);
+  //padding-top: 1.563rem;
   .banner {
-    margin-bottom: 1.5rem;
-    display: block;
+    position: relative;
     img {
-      box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
+      width: 100%;
+    }
+    .banner-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    .banner-title {
+      font-size: 48px;
+      line-height: 1.25;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: .1em;
+      max-width: 550px;
+    }
+    .banner-text {
+      line-height: 1.625;
+      margin-bottom: 1em;
+      max-width: 550px;
     }
   }
   .breadcrumb {

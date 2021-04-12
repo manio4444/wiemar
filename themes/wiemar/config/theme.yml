@@ -71,10 +71,12 @@ global_settings:
       displayTop2:
         - ps_mainmenu
       displayHome:
-        - ps_customtext
-#        - ps_imageslider
-        - ps_featuredproducts
         - ps_banner
+        - ps_specials
+        - ps_customtext
+        - ps_newproducts
+#        - ps_imageslider
+#        - ps_featuredproducts
       displayFooterBefore:
         - blockreassurance
         - ps_emailsubscription
