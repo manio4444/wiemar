@@ -79,13 +79,13 @@ global_settings:
 #        - ps_featuredproducts
       displayFooterBefore:
         - blockreassurance
-        - ps_emailsubscription
-        - ps_socialfollow
-      displayFooter:
         - ps_brandlist
+#        - ps_socialfollow
+      displayFooter:
+        - ps_contactinfo
         - ps_linklist
         - ps_customeraccountlinks
-        - ps_contactinfo
+        - ps_emailsubscription
       displayFooterAfter:
         - blockreassurance
       displayLeftColumn:

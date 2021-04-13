@@ -131,26 +131,12 @@
 .instagram {
   background-image: url(../img/instagram.svg);
 }
-.footer-container {
-  margin-top: $medium-space;
-  padding-top: $medium-space;
-  overflow: hidden;
-  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);
-  li {
-    margin-bottom: 0.3125rem;
-  }
-  li a {
-    color: $gray;
-    cursor: pointer;
-    font-size: $font-size-sm;
-    &:hover {
-      color: $brand-primary;
-    }
-  }
+
+#footer {
 
   #search_filters_brands {
     background-color: #f2f2f2;
-    .swiper-slide {
+    .brand-item {
       margin: 0;
       a {
         display: flex;
@@ -169,28 +155,47 @@
         max-height: 75px;
       }
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: #000;
-      @media (hover: hover) {
-        &:not(:hover) {
-          opacity: .4;
-        }
+
+    @include swiper-controls(#000);
+  }
+
+  #users_reviews_slider {
+    background-color: #3c3c3c;
+    .review-item {
+      margin: 0;
+      padding: 50px;
+      font-size: 14px;
+      &::before {
+        content: '';
+        display: block;
+        border-top: 1px solid #7e7e7e;
+        width: 100%;
       }
 
-      &::after {
-        font-size: 36px;
+      .review-name {
+        color: $brand-orange;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+      .review-text {
+        color: #7e7e7e;
       }
     }
-    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-      @include media-breakpoint-up(md) {
-        left: 0;
-      }
-    }
-    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-      @include media-breakpoint-up(md) {
-        right: 0;
-      }
+
+    @include swiper-controls(#fff);
+  }
+}
+.footer-container {
+  li {
+    margin-bottom: 0.3125rem;
+  }
+  li a {
+    color: $gray;
+    cursor: pointer;
+    font-size: $font-size-sm;
+    &:hover {
+      color: $brand-primary;
     }
   }
 }

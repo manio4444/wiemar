@@ -84,8 +84,16 @@ $(document).ready(() => {
 });
 
 
-let swiper = new Swiper('.swiper-container', {
+let swiperBrands = new Swiper('#search_filters_brands .swiper-container', {
   slidesPerView: 4,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+let swiperReviews = new Swiper('#users_reviews_slider .swiper-container', {
+  slidesPerView: 3,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',

@@ -27,7 +27,7 @@
   <ul class="swiper-wrapper">
     {foreach from=$brands item=brand name=brand_list}
       {if $smarty.foreach.brand_list.iteration <= $text_list_nb}
-        <li class="facet-label swiper-slide">
+        <li class="brand-item swiper-slide">
           <a href="{$brand['link']}" title="{$brand['name']}">
             <img src="{__PS_BASE_URI__}img/m/{$brand['id_manufacturer']}.jpg">
             {* {$brand['name']} *}
