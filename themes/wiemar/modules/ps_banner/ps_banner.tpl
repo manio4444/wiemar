@@ -29,7 +29,7 @@
      <div class="container banner-container">
        <div class="banner-title">{l s='Oryginalne części  i akcesoria GSM' d='Shop.Theme.Homepage'}</div>
        <div class="banner-text">{$banner_desc}</div>
-       <a class="btn btn-primary banner-button" href="{$banner_link}" title="{$banner_desc}">{l s='Więcej' d='Shop.Theme.Homepage'}</a>
+       <a class="btn btn-primary banner-button" href="{$banner_link}" title="{$banner_desc}">{l s='Więcej' d='Shop.Theme.Global'}</a>
      </div>
    </div>
    {/if}

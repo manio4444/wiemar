@@ -40,3 +40,18 @@
 @mixin box-shadow-light {
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
+
+@mixin wiemar-title {
+  display: block;
+  width: 360px;
+  font-size: 36px;
+  line-height: 2.25;
+  text-align: center;
+  margin-bottom: .5em;
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid $brand-orange;
+    width: 100%;
+  }
+}

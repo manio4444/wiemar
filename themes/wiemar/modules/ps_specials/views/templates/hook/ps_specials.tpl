@@ -24,11 +24,15 @@
  *}
 
 <section class="featured-products clearfix mt-3">
-  <h2 class="h2 products-section-title text-uppercase">
-    {l s='On sale' d='Shop.Theme.Catalog'}
-  </h2>
-  {include file="catalog/_partials/productlist.tpl" products=$products}
-  <a class="all-product-link float-xs-left float-md-right h4" href="{$allSpecialProductsLink}">
-    {l s='All sale products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-  </a>
+ <div class="container">
+   <h2 class="h2 products-section-title text-uppercase wiemar-title">
+     {l s='On sale' d='Shop.Theme.Catalog'}
+   </h2>
+   {include file="catalog/_partials/productlist.tpl" products=$products}
+   <div class="text-xs-center">
+     <a class="all-product-link btn btn-primary btn btn-primary" href="{$allSpecialProductsLink}">
+       {l s='Zobacz więcej' d='Shop.Theme.Global'}
+     </a>
+   </div>
+ </div>
 </section>
