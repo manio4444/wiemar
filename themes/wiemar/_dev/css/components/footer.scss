@@ -185,6 +185,12 @@
 
     @include swiper-controls(#fff);
   }
+
+  #contact_title {
+    p {
+      margin-left: 3rem;
+    }
+  }
 }
 .footer-container {
   li {

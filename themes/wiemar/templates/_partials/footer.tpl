@@ -36,6 +36,10 @@
 <div class="footer-container">
   <div class="container-fluid">
     <div class="row">
+
+                {* TEMP BELOW MOVE TO SEPARATED MODULE? *}
+                {include file='_partials/contact-title.tpl'}
+
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
