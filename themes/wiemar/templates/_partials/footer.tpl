@@ -54,14 +54,15 @@
         {hook h='displayFooterAfter'}
       {/block}
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p class="text-sm-center">
-          {block name='copyright_link'}
-            <a class="_blank" href="https://www.prestashop.com" target="_blank" rel="nofollow">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
-          {/block}
+    <div class="row footer-copy-row">
+      <div class="col-md-7">
+        <p class="text-sm-center text-md-left">
+          {l s='Copyright © %year% WIEMAR GSM. Wszelkie prawa zastrzeżone.' sprintf=['%year%' => 'Y'|date] d='Shop.Theme.Footer'}
+        </p>
+      </div>
+      <div class="col-md-5">
+        <p class="text-sm-center text-md-right">
+          Realizacja: Strony internetowe - <a href="https://bcweb.pl/" target="_blank">bcweb.pl</a>
         </p>
       </div>
     </div>

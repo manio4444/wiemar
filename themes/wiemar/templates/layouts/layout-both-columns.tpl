@@ -100,6 +100,10 @@
 
     </main>
 
+    {block name='back_to_top'}
+      <div id="back-to-top"></div>
+    {/block}
+
     {block name='javascript_bottom'}
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}
     {/block}
