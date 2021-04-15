@@ -40,6 +40,11 @@
                 {* TEMP BELOW MOVE TO SEPARATED MODULE? *}
                 {include file='_partials/contact-title.tpl'}
 
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}

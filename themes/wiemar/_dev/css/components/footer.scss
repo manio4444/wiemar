@@ -1,27 +1,32 @@
+.footer-medium-title {
+  color: $footer-text-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 1.1em;
+  a:not(:hover) {
+    color: inherit;
+  }
+}
+
 .block-contact {
-  color: $gray;
-  .block-contact-title{
-    color:$gray-darker;
+  color: $footer-text-color;
+  .block-contact-title {
+    margin-bottom: 0.9em;
+  }
+  i {
+    font-size: 20px;
+    color: $brand-orange;
+    margin: .3rem .5rem .3rem 0;
+  }
+  span {
+    font-size: 14px;
+  }
+  a:not(:hover) {
+    color: inherit;
   }
 }
-.linklist {
-  .blockcms-title a {
-    color:$gray-darker;
-  }
-}
-.account-list a {
-  color: $gray;
-  &:hover {
-    color: $brand-primary;
-  }
-}
-.blockcms-title,
-.myaccount-title,
-.myaccount-title a,
-.block-contact-title {
-  font-weight: 700;
-  font-size: $base-font-size;
-}
+
 .block-social {
   text-align: right;
   ul {
@@ -107,11 +112,7 @@
     }
   }
 }
-#block_myaccount_infos{
-  .myaccount-title a{
-    color:$gray-darker;
-  }
-}
+
 .pinterest {
   background-image: url(../img/pinterest.svg);
   &::before{
@@ -187,21 +188,24 @@
   }
 
   #contact_title {
+    margin: 30px 0;
     p {
-      margin-left: 3rem;
+      margin-left: 6rem;
     }
   }
 }
 .footer-container {
   li {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 0.7rem;
   }
   li a {
-    color: $gray;
     cursor: pointer;
-    font-size: $font-size-sm;
+    font-size: 14px;
+    &:not(:hover) {
+      color: $footer-text-color;
+    }
     &:hover {
-      color: $brand-primary;
+      color: lighten($footer-text-color, 10%);
     }
   }
 }

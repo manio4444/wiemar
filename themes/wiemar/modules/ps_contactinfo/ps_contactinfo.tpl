@@ -23,52 +23,28 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="block-contact col-md-3 links wrapper">
+<div class="block-contact col-md-4 links wrapper">
   <div class="hidden-sm-down">
-    <p class="h4 text-uppercase block-contact-title">{l s='Store information' d='Shop.Theme.Global'}</p>
-      {$contact_infos.address.formatted nofilter}
-      {if $contact_infos.phone}
-        <br>
-        {* [1][/1] is for a HTML tag. *}
-        {l s='Call us: [1]%phone%[/1]'
-          sprintf=[
-          '[1]' => '<span>',
-          '[/1]' => '</span>',
-          '%phone%' => $contact_infos.phone
-          ]
-          d='Shop.Theme.Global'
-        }
-      {/if}
-      {if $contact_infos.fax}
-        <br>
-        {* [1][/1] is for a HTML tag. *}
-        {l
-          s='Fax: [1]%fax%[/1]'
-          sprintf=[
-            '[1]' => '<span>',
-            '[/1]' => '</span>',
-            '%fax%' => $contact_infos.fax
-          ]
-          d='Shop.Theme.Global'
-        }
-      {/if}
-      {if $contact_infos.email && $display_email}
-        <br>
-        {* [1][/1] is for a HTML tag. *}
-        {l
-          s='Email us: [1]%email%[/1]'
-          sprintf=[
-            '[1]' => '<a href="mailto:'|cat:$contact_infos.email|cat:'" class="dropdown">',
-            '[/1]' => '</a>',
-            '%email%' => $contact_infos.email
-          ]
-          d='Shop.Theme.Global'
-        }
-      {/if}
-  </div>
-  <div class="hidden-md-up">
-    <div class="title">
-      <a class="h3" href="{$urls.pages.stores}">{l s='Store information' d='Shop.Theme.Global'}</a>
-    </div>
+    <p class="block-contact-title footer-medium-title">{$contact_infos.company}</p>
+    {* {$contact_infos.address.formatted nofilter} *}
+
+    <i class="material-icons">place</i><span>{$contact_infos.address.address1}{$contact_infos.address.address2}, {$contact_infos.address.postcode} {$contact_infos.address.city}</span>
+    <br>
+    <i class="material-icons">phone</i><span><a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a></span>
+    <br>
+
+    {if $contact_infos.fax}
+    <i class="material-icons">phone</i><span>{$contact_infos.fax}</span>
+    <br>
+    {/if}
+
+    {if $contact_infos.email && $display_email}
+    <i class="material-icons">mail</i><span><a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a></span>
+    <br>
+    {/if}
+
+    <i class="material-icons">description</i><span>NIP: 822-223-98-00</span>
+    <br>
+
   </div>
 </div>
