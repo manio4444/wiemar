@@ -30,9 +30,10 @@ a:hover {
   text-decoration: none;
 }
 p {
-  font-size: 0.9375rem;
-  color: $gray;
+  font-size: 14px;
+  color: #3c3c3c;
   font-weight: 400;
+  line-height: 1.71;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {

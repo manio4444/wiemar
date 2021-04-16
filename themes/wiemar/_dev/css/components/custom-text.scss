@@ -1,6 +1,5 @@
 #custom-text {
   p {
-    font-size: 14px;
     max-width: 800px;
   }
   img {
@@ -10,16 +9,24 @@
 }
 
 #offer-section {
-  a:not(:hover) {
-    color: $brand-orange;
+  .row-offers {
+    display: flex;
+    flex-wrap: wrap;
   }
   .offer-item {
+    flex-grow: 1;
     background-color: #f2f2f2;
-    margin-bottom: 30px;
+    margin: 0 14px 30px;
     padding: 40px 34px;
     min-height: 250px;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right 4% top -15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include media-breakpoint-up(md) {
+      flex-basis: calc(50% - 30px);
+    }
     &.cat-screens { background-image: url(../img-categories/cat-screens.png) }
     &.cat-body { background-image: url(../img-categories/cat-body.png) }
     &.cat-tapes { background-image: url(../img-categories/cat-tapes.png) }
@@ -27,19 +34,53 @@
     &.cat-batteries { background-image: url(../img-categories/cat-batteries.png) }
     &.cat-other { background-image: url(../img-categories/cat-other.png) }
     &.cat-chargers { background-image: url(../img-categories/cat-chargers.png) }
-    //&.cat-more { background-image: url(../img-categories/cat-more.png) }
+    &.cat-gotoshop { background-image: url(../img/wiemar_logo_01.svg) }
+
+    &.cat-screens {
+    }
+    &.cat-body {
+    }
+    &.cat-tapes {
+      background-position: right -80px top -15%;
+    }
+    &.cat-connectors {
+    }
+    &.cat-batteries {
+    }
+    &.cat-other {
+    }
+    &.cat-chargers {
+    }
+    &.cat-gotoshop {
+      background-size: 45%;
+      background-position: right 18% bottom 30%;
+
+    }
   }
+
+
+
   .offer-section-title {
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
+    max-width: 50%;
   }
   .offer-section-text {
-    font-size: 14px;
-    line-height: 1.71em;
+    max-width: 50%;
+    margin-bottom: auto;
   }
   .offer-section-more {
     text-transform: uppercase;
+    font-size: 10px;
+    color: $brand-orange;
+    &:hover {
+      color: darken($brand-orange, 10%);
+    }
+  }
+  .offer-section-more,
+  a {
+    margin-top: 1rem;
   }
 }
 

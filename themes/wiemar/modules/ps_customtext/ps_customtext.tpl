@@ -38,62 +38,46 @@
 
 <div id="offer-section">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-screens">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+    <div class="row row-offers">
+      <div class="offer-item cat-screens">
+        <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-body">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-body">
+        <h3 class="offer-section-title">{l s='Klapki, korpusy, obudowy' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Elementy obudowy <br> telefonów typu: <br> - klapki baterii, <br> - ramki, <br> - korpusy.' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-tapes">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-tapes">
+        <h3 class="offer-section-title">{l s='Taśmy montażowe' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Taśmy klejące wyświetlaczy, klapek, baterii oraz zestawy naprawcze (zestawy taśm montażowych)' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-connectors">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-connectors">
+        <h3 class="offer-section-title">{l s='Złącza usb (taśmy/płytki)' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Złącza USB oraz taśmy/płytki ze złączem USB i Audio' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-batteries">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-batteries">
+        <h3 class="offer-section-title">{l s='Baterie' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Baterie / Akumulatorki' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-other">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-other">
+        <h3 class="offer-section-title">{l s='Pozostałe części' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Szufladki kart SIM i SD, Taśmy LCD, układy zasilania, złącza PCB' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-chargers">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-chargers">
+        <h3 class="offer-section-title">{l s='Ładowarki i kable' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Ładowarki sieciowe/samochodowe <br> Kable USB' d='Shop.Theme.Homepage'}</p>
+        <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="offer-item cat-more">
-          <h3 class="offer-section-title">{l s='Wyświetlacze digitizery' d='Shop.Theme.Homepage'}</h3>
-          <p class="offer-section-text">{l s='Ekrany dotykowe z wyświetlaczem oraz Digitizery' d='Shop.Theme.Homepage'}</p>
-          <a class="offer-section-more" href="#">{l s='Więcej' d='Shop.Theme.Global'}</a>
-        </div>
+      <div class="offer-item cat-gotoshop">
+        <h3 class="offer-section-title">{l s='Przejdź do sklepu' d='Shop.Theme.Homepage'}</h3>
+        <p class="offer-section-text">{l s='Zobacz wszystkie produkty' d='Shop.Theme.Homepage'}</p>
+        <a class="btn btn-primary" href="{$link->getCategoryLink(2)|escape:'html':'UTF-8'}">{l s='Sklep' d='Shop.Theme.Homepage'}</a>
       </div>
     </div>
   </div>
