@@ -1,30 +1,49 @@
 #custom-text {
-  background: white;
-  border-radius: 2px;
-  margin-bottom: 1.5rem;
-  padding: 3.125rem 3.125rem;
-  text-align: center;
-  h2 {
-    text-transform: uppercase;
-    color: $gray-darker;
-    font-size: 1.563rem;
-    font-weight: 700;
-  }
   p {
-    color: $gray-darker;
-    font-weight: 400;
-    font-size: 1.1em;
-    .dark {
-      color: $gray;
-      font-weight: 400;
-    }
+    font-size: 14px;
+    max-width: 800px;
   }
   img {
     max-width: 100%;
     height: 100%;
   }
 }
-.page-content.page-cms{
+
+#offer-section {
+  a:not(:hover) {
+    color: $brand-orange;
+  }
+  .offer-item {
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    padding: 40px 34px;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    &.cat-screens { background-image: url(../img-categories/cat-screens.png) }
+    &.cat-body { background-image: url(../img-categories/cat-body.png) }
+    &.cat-tapes { background-image: url(../img-categories/cat-tapes.png) }
+    &.cat-connectors { background-image: url(../img-categories/cat-connectors.png) }
+    &.cat-batteries { background-image: url(../img-categories/cat-batteries.png) }
+    &.cat-other { background-image: url(../img-categories/cat-other.png) }
+    &.cat-chargers { background-image: url(../img-categories/cat-chargers.png) }
+    //&.cat-more { background-image: url(../img-categories/cat-more.png) }
+  }
+  .offer-section-title {
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .offer-section-text {
+    font-size: 14px;
+    line-height: 1.71em;
+  }
+  .offer-section-more {
+    text-transform: uppercase;
+  }
+}
+
+.page-content.page-cms {
   background: white;
   padding: 1.25rem;
   text-align: justify;
