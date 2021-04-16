@@ -52,7 +52,7 @@
         {include file='_partials/notifications.tpl'}
       {/block}
 
-      <section id="wrapper">
+      <section id="wrapper" class="clearfix">
         {hook h="displayWrapperTop"}
         {* <div class="container"> *}
           {block name='breadcrumb'}
