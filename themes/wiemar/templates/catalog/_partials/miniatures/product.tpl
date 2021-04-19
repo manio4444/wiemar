@@ -90,9 +90,9 @@
 
       {include file='catalog/_partials/product-flags.tpl'}
 
-      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
+      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down visible-on-hover">
         {block name='quick_view'}
-          <a class="quick-view" href="#" data-link-action="quickview" alt="{l s='Quick view' d='Shop.Theme.Actions'}">
+          <a class="quick-view round-with-icon" href="#" data-link-action="quickview" alt="{l s='Quick view' d='Shop.Theme.Actions'}">
             <i class="material-icons">remove_red_eye</i>
           </a>
         {/block}
@@ -103,6 +103,11 @@
           {/if}
         {/block}
       </div>
+
+        {block name='product_miniature_add_to_cart'}
+          {include file='catalog/_partials/product-miniature-add-to-cart.tpl' variants=$product.main_variants}
+        {/block}
+
     </div>
   </article>
 </div>

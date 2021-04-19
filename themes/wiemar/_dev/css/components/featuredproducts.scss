@@ -41,10 +41,21 @@ $product-description-height: 70px;
       width: calc(((1556px - 30px) / 4) - (2 * #{$product-box-margin}));
     }
 
+    .visible-on-hover {
+      z-index: 2;
+      transition: opacity .3s;
+      opacity: 0;
+      position: absolute;
+      right: 10px;
+      @media (min-width: 1600px) {
+        right: 15px;
+      }
+    }
+
     &:hover, &:focus {
       z-index: 1;
       @include box-shadow;
-      .highlighted-informations {
+      .visible-on-hover {
         opacity: 1;
       }
     }
@@ -85,12 +96,7 @@ $product-description-height: 70px;
     background: white;
   }
   .highlighted-informations {
-    position: absolute;
-    bottom: 4.25rem;
-    right: 0;
-    z-index: 2;
-    transition: opacity .3s;
-    opacity: 0;
+    bottom: 80px;
 
     .quick-view {
       display: flex;
@@ -114,11 +120,44 @@ $product-description-height: 70px;
     }
   }
 
+  #add-to-cart-or-refresh {
+    bottom: 20px;
+
+    button {
+      outline: 0;
+      border: 1px solid $brand-orange;
+
+      i {
+        color: $brand-orange;
+      }
+
+      &:hover {
+        background-color: $brand-orange;
+
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .round-with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
   .product-description {
     width: $thumbnail-size;
     bottom: 0;
     height: $product-description-height;
     font-size: $product-description-size;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .product-miniature {
