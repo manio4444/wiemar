@@ -703,7 +703,9 @@
   }
 }
 .products-selection {
-  margin-bottom: $medium-space;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f2f2f2;
   .title {
     color: $gray;
   }

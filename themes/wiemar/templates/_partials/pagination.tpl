@@ -32,7 +32,7 @@
   <div class="col-md-6 offset-md-2 pr-0">
     {block name='pagination_page_list'}
      {if $pagination.should_be_displayed}
-        <ul class="page-list clearfix text-sm-center">
+        <ul class="page-list clearfix text-sm-center text-md-right">
           {foreach from=$pagination.pages item="page"}
 
 
@@ -46,9 +46,9 @@
                   class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
                 >
                   {if $page.type === 'previous'}
-                    <i class="material-icons">&#xE314;</i>{l s='Previous' d='Shop.Theme.Actions'}
+                    <i class="material-icons">trending_flat</i>{* {l s='Previous' d='Shop.Theme.Actions'} *}
                   {elseif $page.type === 'next'}
-                    {l s='Next' d='Shop.Theme.Actions'}<i class="material-icons">&#xE315;</i>
+                    {* {l s='Next' d='Shop.Theme.Actions'} *}<i class="material-icons">trending_flat</i>
                   {else}
                     {$page.page}
                   {/if}
