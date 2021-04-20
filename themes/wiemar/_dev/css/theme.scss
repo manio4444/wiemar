@@ -217,25 +217,31 @@
     }
     ol {
       padding-left: 0;
-      margin-bottom: 0;
+      margin: 24px 0;
+      font-size: 12px;
+      line-height: 24px;
+      color: #656565;
+      text-transform: uppercase;
     }
     li {
       display: inline;
       &::after {
         content: "/";
-        color: $gray;
+        color: $brand-orange;
         margin: 0.3125rem;
       }
       &:last-child {
         content: "/";
-        color: $gray;
         margin: 0;
         &::after {
           content: "";
         }
       }
       a {
-        color: $gray-darker;
+        color: inherit;
+        &:hover {
+          color: $brand-orange;
+        }
       }
     }
   }
