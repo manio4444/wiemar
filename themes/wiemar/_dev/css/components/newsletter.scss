@@ -1,8 +1,14 @@
 .block_newsletter {
   @include search-box;
-  background: white;
   font-size: $font-size-sm;
   margin-bottom: 0.625rem;
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    & > .row {
+      margin: 0;
+    }
+  }
   form {
     .input-wrapper {
       overflow: hidden;

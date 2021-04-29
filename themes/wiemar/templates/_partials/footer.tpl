@@ -55,13 +55,13 @@
       {/block}
     </div>
     <div class="row footer-copy-row">
-      <div class="col-md-7">
-        <p class="text-sm-center text-md-left">
+      <div class="col-md-7 hidden-xs-down">
+        <p class="text-xs-center text-md-left">
           {l s='Copyright © %year% WIEMAR GSM. Wszelkie prawa zastrzeżone.' sprintf=['%year%' => 'Y'|date] d='Shop.Theme.Footer'}
         </p>
       </div>
       <div class="col-md-5">
-        <p class="text-sm-center text-md-right">
+        <p class="text-xs-center text-md-right">
           Realizacja: Strony internetowe - <a href="https://bcweb.pl/" target="_blank">bcweb.pl</a>
         </p>
       </div>

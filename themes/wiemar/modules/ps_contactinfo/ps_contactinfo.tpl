@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="block-contact col-md-4 links wrapper">
+<div class="block-contact col-md-4 links">
   <div class="block-contact-container">
     <p class="block-contact-title footer-medium-title">{$contact_infos.company}</p>
     {* {$contact_infos.address.formatted nofilter} *}

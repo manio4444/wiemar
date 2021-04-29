@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-xs-12">
           <input
-            class="btn btn-primary float-xs-right hidden-xs-down"
+            class="btn btn-primary float-xs-right"
             name="submitNewsletter"
             type="submit"
             value="{l s='Send' d='Shop.Theme.Actions'}"
