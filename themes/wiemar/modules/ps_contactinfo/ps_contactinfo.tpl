@@ -24,7 +24,7 @@
  *}
 
 <div class="block-contact col-md-4 links wrapper">
-  <div class="hidden-sm-down">
+  <div class="block-contact-container">
     <p class="block-contact-title footer-medium-title">{$contact_infos.company}</p>
     {* {$contact_infos.address.formatted nofilter} *}
 
