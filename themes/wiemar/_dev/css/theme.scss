@@ -31,6 +31,7 @@
 @import "components/newsletter";
 @import "components/brands";
 @import "components/back-to-top";
+@import "components/hamburger";
 
 /*** HEADER ***/
 #header {
@@ -92,6 +93,9 @@
   }
 
   .header-top {
+    @include media-breakpoint-down(sm) {
+      border-bottom: 15px solid $brand-gray;
+    }
     > .container {
       position: relative;
     }
@@ -119,15 +123,13 @@
       font-size: 14px;
     }
 
-    #_desktop_contact_link {
-      #contact-link {
-        font-weight: bold;
-        text-transform: uppercase;
-        padding-right: 20px;
-      }
+    #contact-link {
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-right: 20px;
     }
 
-    #_desktop_user_info {
+    #user-info {
       font-weight: bold;
       text-transform: uppercase;
       padding-right: 20px;
@@ -136,7 +138,10 @@
       }
     }
 
-    #_desktop_cart {
+    #icon-cart {
+      @include media-breakpoint-down(sm) {
+        padding-right: 20px;
+      }
       .cart-products-icon {
         position: relative;
         i {
@@ -276,17 +281,6 @@
 }
 
 /*** Responsive part ***/
-@include media-breakpoint-down(lg) {
-  #header {
-    .header-nav {
-      max-height: inherit;
-      .search-widget {
-       float: none;
-       width: 15.63rem;
-      }
-    }
-  }
-}
 @include media-breakpoint-down(md) {
   .container {
     max-width: 100%;
@@ -343,53 +337,6 @@
     margin-top: 1rem;
   }
   #header {
-    background: $gray-light;
-    .header-nav {
-      background: white;
-      margin-bottom: 0.625rem;
-      color: $gray-darker;
-      .top-logo {
-        padding-top: 11px;
-        a {
-          img {
-            max-height: 50px;
-            max-width: 100%;
-          }
-        }
-      }
-      .right-nav {
-        flex-direction: column;
-      }
-      .user-info {
-        text-align: left;
-        margin-left: 0;
-        .logged {
-          color: $brand-primary;
-        }
-      }
-      .blockcart {
-        margin-left: 0;
-        background: inherit;
-        &.active {
-          margin-left: 0.5rem;
-        }
-        &.inactive {
-          .cart-products-count {
-            display: none;
-          }
-        }
-      }
-    }
-    .header-top {
-      background: $gray-light;
-      padding-bottom: 0;
-      a[data-depth="0"] {
-        color: $gray-darker;
-      }
-      .search-widget {
-        width: 100%;
-      }
-    }
     &.is-open {
       background-color: white;
       .header-top {

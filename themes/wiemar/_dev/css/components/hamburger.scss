@@ -1,0 +1,36 @@
+.menu-hamburger {
+  display: flex;
+  .hamburger-box {
+    width: 33px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+  }
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2.5px;
+    &::before, &::after {
+      background-color: $hamburger-color;
+      content: '';
+      display: block;
+    }
+    &::before {
+      top: -10px;
+    }
+    &::after {
+      bottom: -10px;
+    }
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: $hamburger-color;
+  }
+}

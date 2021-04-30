@@ -30,22 +30,7 @@
 
 {block name='header_nav'}
   <nav class="header-nav">
-    <div class="container">
-      <div class="row">
-
-        <div class="hidden-md-up text-sm-center mobile">
-          <div class="float-xs-left" id="menu-icon">
-            <i class="material-icons d-inline">&#xE5D2;</i>
-          </div>
-          <div class="float-xs-right" id="_mobile_cart"></div>
-          <div class="float-xs-right" id="_mobile_user_info"></div>
-          <div class="top-logo" id="_mobile_logo"></div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
+    <div class="container-fluid hidden-sm-down">
       <div class="row">
         <div class="col-md-4 col-sm-12 col-orange">
           Wysyłka kurierem DPD realizowana do godziny 12:00
@@ -70,7 +55,7 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-4 hidden-sm-down col-logo" id="_desktop_logo">
+        <div class="col-xs-6 col-sm-5 col-md-3 col-lg-3 col-xl-4 col-logo" id="">
             {if $page.page_name == 'index'}
               <h1>
                 <a href="{$urls.base_url}">
@@ -83,17 +68,18 @@
                 </a>
             {/if}
         </div>
-        <div class="col-md-4 col-sm-12 col-search-widget">
+        <div class="col-md-5 col-lg-4 col-xl-4 hidden-sm-down col-search-widget">
           {hook h='displayTop'}
           <div class="clearfix"></div>
         </div>
-        <div class="col-md-4 hidden-sm-down col-right-useractions">
-          <div id="_desktop_contact_link">
-            <div id="contact-link">
-              <a href="{$urls.pages.contact}">Kontakt</a>
-            </div>
+        <div class="col-xs-6 col-sm-7 col-md-4 col-lg-5 col-xl-4 col-right-useractions">
+          <div id="contact-link" class="hidden-md-down">
+            <a href="{$urls.pages.contact}">Kontakt</a>
           </div>
           {hook h='displayNav2'}
+          <div class="menu-hamburger hidden-md-up">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+          </div>
         </div>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
@@ -109,16 +95,12 @@
   <div class="header-top-menu">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-
-        </div>
         <div class="col-sm-12">
           {hook h='displayTop2'}
           <div class="clearfix"></div>
         </div>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">
           <div id="_mobile_currency_selector"></div>
           <div id="_mobile_language_selector"></div>
