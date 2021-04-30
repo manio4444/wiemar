@@ -85,19 +85,29 @@ $(document).ready(() => {
 
 
 let swiperBrands = new Swiper('#search_filters_brands .swiper-container', {
-  slidesPerView: 4,
+  slidesPerView: 2,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+  },
 });
 let swiperReviews = new Swiper('#users_reviews_slider .swiper-container', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
   },
 });
 

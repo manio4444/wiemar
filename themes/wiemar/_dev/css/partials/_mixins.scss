@@ -78,7 +78,10 @@
     }
 
     &::after {
-      font-size: 36px;
+      font-size: 18px;
+      @include media-breakpoint-up(sm) {
+        font-size: 36px;
+      }
     }
   }
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
