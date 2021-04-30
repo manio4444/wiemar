@@ -90,7 +90,7 @@
 
       {include file='catalog/_partials/product-flags.tpl'}
 
-      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down visible-on-hover">
+      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} visible-on-hover">
         {block name='quick_view'}
           <a class="quick-view round-with-icon" href="#" data-link-action="quickview" alt="{l s='Quick view' d='Shop.Theme.Actions'}">
             <i class="material-icons">remove_red_eye</i>

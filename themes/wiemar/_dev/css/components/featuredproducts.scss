@@ -17,11 +17,13 @@ $product-description-height: 70px;
   }
   .thumbnail-container {
     position: relative;
-    margin: $product-box-margin;
+    margin: $product-box-margin 0;
+    @include media-breakpoint-up(md) {
+      margin: $product-box-margin;
+    }
     //height: 318px;
     //background: white;
-
-    width: 100%;
+    width: calc((320px - 30px) / 1);
     //@include media-breakpoint-up(sm) {
     //  width: calc((540px - 30px) / 1);
     //}
@@ -43,22 +45,31 @@ $product-description-height: 70px;
 
     .visible-on-hover {
       z-index: 2;
-      transition: opacity .3s;
-      opacity: 0;
       position: absolute;
       right: 10px;
       @media (min-width: 1600px) {
         right: 15px;
       }
+      @media (hover: hover) {
+        transition: opacity .3s;
+        opacity: 0;
+      }
     }
 
     &:hover, &:focus {
       z-index: 1;
-      @include box-shadow;
-      .visible-on-hover {
-        opacity: 1;
+      @media (hover: hover) {
+        @include box-shadow;
+        .visible-on-hover {
+          opacity: 1;
+        }
       }
     }
+
+    @media (hover: none) {
+      @include box-shadow;
+    }
+
     .product-thumbnail {
       display: flex;
       justify-content: center;
@@ -105,39 +116,44 @@ $product-description-height: 70px;
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background-color: transparent;
+      background-color: $product-box-quicklook-color;
       border: 1px solid $product-box-quicklook-color;
       transition: background-color .2s;
       i {
-        color: $product-box-quicklook-color;
+        color: white;
       }
-      &:hover {
-        background-color: $product-box-quicklook-color;
-        i {
-          color: white;
+      @media (hover:hover) {
+        &:not(:hover) {
+          background-color: transparent;
+          i {
+            color: $product-box-quicklook-color;
+          }
         }
       }
     }
   }
 
   #add-to-cart-or-refresh {
-    bottom: 20px;
+    bottom: 15px;
 
     button {
       outline: 0;
+      background-color: $brand-orange;
       border: 1px solid $brand-orange;
 
       i {
-        color: $brand-orange;
+        color: white;
       }
 
-      &:hover {
-        background-color: $brand-orange;
-
-        i {
-          color: white;
+      @media (hover:hover) {
+        &:not(:hover) {
+          background-color: transparent;
+          i {
+            color: $brand-orange;
+          }
         }
       }
+
     }
   }
 
@@ -207,16 +223,6 @@ $product-description-height: 70px;
   }
 }
 
-@include media-breakpoint-down(sm) {
-  #products,.featured-products,.product-accessories  {
-    .thumbnail-container {
-      @include box-shadow;
-      .product-description{
-        box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
-      }
-    }
-  }
-}
 
 @include media-breakpoint-down(md) {
   .featured-products {

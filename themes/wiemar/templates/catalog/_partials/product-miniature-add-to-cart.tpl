@@ -22,7 +22,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh" class="hidden-sm-down visible-on-hover">
+<form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh" class="visible-on-hover">
  <input type="hidden" name="token" value="{$static_token}">
  <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
  <button class="round-with-icon add-to-cart {if $product.quantity < 1}out-of-stock{/if}" data-button-action="add-to-cart" type="submit">
