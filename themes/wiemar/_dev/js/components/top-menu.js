@@ -27,52 +27,30 @@ import DropDown from './drop-down';
 
 export default class TopMenu extends DropDown {
   init() {
-    let elmtClass;
     const self = this;
-    this.el.find('li').hover(e => {
-      if (this.el.parent().hasClass('mobile')) {
-        return;
-      }
-      const currentTargetClass = $(e.currentTarget).attr('class');
-      if (elmtClass !== currentTargetClass) {
-        const classesSelected = Array.prototype.slice.call(e.currentTarget.classList).map(e => (typeof e === 'string' ? `.${e}` : false));
+    const menuMobileToggle = $('.menu-mobile-toggle');
+    const menuMobileWrapper = $('.menu-mobile-wrapper');
 
-        elmtClass = classesSelected.join('');
+    // https://davidwells.io/snippets/disable-scrolling-with-javascript/
+    function noScroll() {
+      window.scrollTo(0, 0);
+    }
 
-        if (elmtClass && $(e.target).data('depth') === 0) {
-          $(`${elmtClass} .js-sub-menu`).css({
-            top: $(`${elmtClass}`).height() + $(`${elmtClass}`).position().top
-          });
-        }
+    menuMobileToggle.on('click', () => {
+      console.log('menuMobileToggle click');
+      if (menuMobileWrapper.hasClass("isVisible")) {
+        menuMobileWrapper.removeClass('isVisible');
+        window.removeEventListener('scroll', noScroll);
+      } else {
+        menuMobileWrapper.addClass('isVisible');
+        window.addEventListener('scroll', noScroll);
       }
     });
-    $('#menu-icon').on('click', () => {
-      $('#mobile_top_menu_wrapper').toggle();
-      self.toggleMobileMenu();
-    });
-    $('.js-top-menu .category').mouseleave(() => {
-      if (this.el.parent().hasClass('mobile')) {
-      }
-    });
-    this.el.on('click', e => {
-      if (this.el.parent().hasClass('mobile')) {
-        return;
-      }
-      e.stopPropagation();
-    });
-    prestashop.on('responsive update', event => {
-      $('.js-sub-menu').removeAttr('style');
-      self.toggleMobileMenu();
-    });
+
+    // prestashop.on('responsive update', event => {
+    //   $('.js-sub-menu').removeAttr('style');
+    // });
     super.init();
   }
 
-  toggleMobileMenu() {
-    $('#header').toggleClass('is-open');
-    if ($('#mobile_top_menu_wrapper').is(':visible')) {
-      $('#notifications, #wrapper, #footer').hide();
-    } else {
-      $('#notifications, #wrapper, #footer').show();
-    }
-  }
 }

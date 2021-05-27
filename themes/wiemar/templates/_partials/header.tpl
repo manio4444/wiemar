@@ -77,17 +77,9 @@
             <a href="{$urls.pages.contact}">Kontakt</a>
           </div>
           {hook h='displayNav2'}
-          <div class="menu-hamburger hidden-md-up">
+          <div class="menu-hamburger hidden-md-up menu-mobile-toggle">
             <span class="hamburger-box"><span class="hamburger-inner"></span></span>
           </div>
-        </div>
-      </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
-        <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
-          <div id="_mobile_contact_link"></div>
         </div>
       </div>
     </div>
@@ -100,14 +92,11 @@
           <div class="clearfix"></div>
         </div>
       </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
-          <div id="_mobile_contact_link"></div>
-        </div>
-      </div>
+
     </div>
   </div>
+<div class="header-top-mobile-search hidden-xs-up">
+    {hook h='displayTop3'}
+</div>
   {hook h='displayNavFullWidth'}
 {/block}

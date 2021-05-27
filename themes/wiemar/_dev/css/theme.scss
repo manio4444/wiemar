@@ -170,10 +170,21 @@
 
   }
   .header-top-menu {
-    background-color: $header-menu-bgn;
+    @include media-breakpoint-down(sm) {
+      border-bottom: 15px solid $brand-gray;
+    }
+    @include media-breakpoint-up(md) {
+      background-color: $header-menu-bgn;
+    }
   }
   .top-menu-link {
     margin-left: $medium-space;
+  }
+
+  .header-top-mobile-search {
+    @include media-breakpoint-down(sm) {
+      border-bottom: 15px solid $brand-gray;
+    }
   }
 }
 
@@ -289,19 +300,10 @@
     .logo {
       width: auto;
     }
-    .header-top {
-      .search-widget {
-        min-width: inherit;
-      }
-    }
   }
   #products .product-miniature,
   .featured-products .product-miniature {
     margin: 0 auto;
-  }
-  .sub-menu {
-    left: 0;
-    min-width: 100%;
   }
   #blockcart-modal .product-image {
     width: 100%;
