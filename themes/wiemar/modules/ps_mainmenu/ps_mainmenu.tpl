@@ -31,8 +31,11 @@
 </div>
 
 <div class="menu-mobile-wrapper hidden-md-up">
-    <div class="menu-hamburger menu-mobile-toggle">
-        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    <div class="menu-mobile-wrapper-inside">
+        <div class="menu-hamburger menu-mobile-toggle">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </div>
+        <span class="menu-mobile-wrapper-title">{l s='Kategorie' d='Shop.Theme.Global'}</span>
+        {menu nodes=$menu.children}
     </div>
-    {menu nodes=$menu.children}
 </div>
