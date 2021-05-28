@@ -37,6 +37,9 @@
 #header {
   background: white;
   color: $gray;
+  h1 {
+    margin: 0;
+  }
   .logo {
     max-width: 100%;
   }
@@ -60,19 +63,39 @@
     }
   }
 
-  .header-nav {
+  .header-shipment-banner {
     font-size: 14px;
+    display: flex;
+    &::before,
+    &::after {
+      content: '';
+      flex-grow: 1;
+    }
+    &::before {
+      background-color: $brand-orange;
+    }
+    &::after {
+      background-color: #3c3c3c;
+    }
+
+    .container-shipment-banner {
+      padding: 0;
+      display: flex;
+    }
+
     .col-orange {
       height: 50px;
+      padding: 0 15px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
       background-color: $brand-orange;
       color: #fff;
-      text-align: right;
     }
     .col-gray {
       height: 50px;
+      padding: 0 15px;
+      flex-grow: 1;
       display: flex;
       justify-content: space-between;
       align-items: center;

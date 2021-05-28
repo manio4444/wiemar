@@ -3,22 +3,6 @@ $carrierComponent: 'carrier';
 
 body#checkout {
   color: $gray-darker;
-  #header .header-nav {
-    max-height: none;
-    padding: 0.9375rem 0;
-    border: none;
-    margin-bottom: 0;
-    @include box-shadow;
-    .logo {
-      max-height: 4.375rem;
-      width: auto;
-    }
-    #_desktop_contact_link{
-      #contact-link {
-        margin-top: 0;
-      }
-    }
-  }
   .custom-checkbox {
     display: flex;
     span {
@@ -544,10 +528,6 @@ body#checkout {
     margin-left: $medium-space;
   }
   body#checkout {
-    #header .header-nav {
-      max-height: none;
-      padding: 0;
-    }
     section.checkout-step {
       .content {
         padding: 0.9375rem;

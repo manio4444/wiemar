@@ -29,22 +29,20 @@
 {/block}
 
 {block name='header_nav'}
-  <nav class="header-nav">
-    <div class="container-fluid hidden-sm-down">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 col-orange">
-          Wysyłka kurierem DPD realizowana do godziny 12:00
-          <div class="clearfix"></div>
+  <nav class="header-shipment-banner">
+    <div class="container container-shipment-banner hidden-sm-down">
+      <div class="col-orange">
+        Wysyłka kurierem DPD realizowana do godziny&nbsp;<b>12:00</b>
+      </div>
+
+      <div class="col-gray">
+        <div class="delivery-time text-uppercase">
+          <i class="material-icons text-orange">local_shipping</i>
+          <span><b>06</b>h <b>28</b>min</span>
         </div>
-        <div class="col-md-8 col-sm-12 col-gray">
-          <div class="delivery-time text-uppercase">
-            <i class="material-icons text-orange">airport_shuttle</i>
-            <span><b>06</b>h <b>28</b>min</span>
-          </div>
-          <div class="right-side">
-            <a class="newsletter-link text-orange text-uppercase" href="#"><b>Newsletter</b></a>
-            {hook h='displayNav1'}
-          </div>
+        <div class="right-side">
+          <a class="newsletter-link text-orange text-uppercase" href="#"><b>Newsletter</b></a>
+          {hook h='displayNav1'}
         </div>
       </div>
     </div>
