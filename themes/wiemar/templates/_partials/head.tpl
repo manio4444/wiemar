@@ -55,6 +55,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:light,regular,semi-bold,bold">
+
 {block name='stylesheets'}
   {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
 {/block}
