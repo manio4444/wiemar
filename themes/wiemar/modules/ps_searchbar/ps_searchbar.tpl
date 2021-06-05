@@ -25,8 +25,24 @@
 <!-- Block search module TOP -->
 <div id="search_widget" class="search-widget" data-search-controller-url="{$search_controller_url}">
 	<form method="get" action="{$search_controller_url}">
+        <div class="dropdown category-toggle">
+            <button class="dropdown-toggle category-toggle-btn" type="button" id="dropdown-search-widget" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                {l s='Kategorie' d='Shop.Theme.Catalog'}
+            </button>
+            <input type="hidden" class="category-toggle-input" name="PRESTA_API_CATEGORY_ID_HERE???">
+
+            {assign var='mainPageSubCategories' value=Category::getChildren(2, 1, true, false)}
+            <ul class="dropdown-menu category-toggle-menu" aria-labelledby="dropdown-search-widget">
+                {foreach from=$mainPageSubCategories item=category}
+                    <li class="category-toggle-element" data-cat-id="{$category.id_category}">
+                        <a href="/{$category.link_rewrite}">{$category.name}</a>
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+
 		<input type="hidden" name="controller" value="search">
-		<input type="text" name="s" value="{$search_string}" placeholder="{l s='Search our catalog' d='Shop.Theme.Catalog'}" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
+		<input type="text" name="s" value="{$search_string}" {*placeholder="{l s='Search our catalog' d='Shop.Theme.Catalog'}"*} aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
 		<button type="submit">
 			<i class="material-icons search">&#xE8B6;</i>
       <span class="hidden-xl-down">{l s='Search' d='Shop.Theme.Catalog'}</span>
