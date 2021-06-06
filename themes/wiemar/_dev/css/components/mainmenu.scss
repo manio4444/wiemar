@@ -8,13 +8,13 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
-      &[id^="category-1"]::before { background-image: url(../img-cat-menu/002-smartphone.svg); }
-      &[id^="category-2"]::before { background-image: url(../img-cat-menu/004-smartphone-2.svg); }
-      &[id^="category-3"]::before { background-image: url(../img-cat-menu/003-smartphone-1.svg); }
-      &[id^="category-4"]::before { background-image: url(../img-cat-menu/001-usb.svg); }
-      &[id^="category-5"]::before { background-image: url(../img-cat-menu/002-battery.svg); }
-      &[id^="category-6"]::before { background-image: url(../img-cat-menu/004-charger.svg); }
-      &[id^="category-7"]::before { background-image: url(../img-cat-menu/005-cpu.svg); }
+      &[id^="category-10"]::before { background-image: url(../img-cat-menu/002-smartphone.svg); }
+      &[id^="category-11"]::before { background-image: url(../img-cat-menu/004-smartphone-2.svg); }
+      &[id^="category-12"]::before { background-image: url(../img-cat-menu/003-smartphone-1.svg); }
+      &[id^="category-13"]::before { background-image: url(../img-cat-menu/001-usb.svg); }
+      &[id^="category-14"]::before { background-image: url(../img-cat-menu/002-battery.svg); }
+      &[id^="category-15"]::before { background-image: url(../img-cat-menu/004-charger.svg); }
+      &[id^="category-16"]::before { background-image: url(../img-cat-menu/005-cpu.svg); }
     }
   }
 }
