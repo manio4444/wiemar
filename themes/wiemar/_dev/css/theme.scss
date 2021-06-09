@@ -147,7 +147,7 @@
     }
 
     #contact-link {
-      font-weight: bold;
+      font-weight: 600;
       text-transform: uppercase;
       padding-right: 20px;
     }
@@ -156,8 +156,19 @@
       font-weight: bold;
       text-transform: uppercase;
       padding-right: 20px;
+      a {
+        display: flex;
+      }
       i {
         color: #9d9d9d;
+      }
+      .icon-base64 {
+        margin-right: 8px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAA9UlEQVQ4y6WSMUsDQRCFv9urA7EwlWwjCmIjoqQZ+4AW/lSLWFikyusUCwsF0eYwjZZplCTGwuHQcLdJLq+cfe9b3jAZFTKzXeAM2PHRGzCU9LrozSrCp8A51bqWdPt3EBbCbaBHvXruqQYAh0CeAOTuqQW0WK5WCjBeATBOAR6BWSI8c8+/TqWKoviMMX4BezWAG0kvtQCHjGKMI2DL+875vYO+pIcVKq6n8pDM7AA4BjrAN/AMfPjzNrDvO3sH7iU9lQAzuwBO1vz8TlI/M7Mj4LJhg6sAdDdYQTd456bqBNK3v0x5AKYbAKYBGACTBuEJMPgB5qw8ulqIjQIAAAAASUVORK5CYII=") no-repeat center center;
       }
     }
 
@@ -170,9 +181,17 @@
         i {
           color: #9d9d9d;
         }
+        .icon-base64 {
+          margin-right: 8px;
+          vertical-align: middle;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABEklEQVQ4y63Uvy5EURDH8c9dhJUgKxqFjU6v0RxP4Ak8hdZzeAutRqcxlUYlUYmsxZKIfwmLxCrcxLq5sn/sJJOcmTP5nt+cOTlZSmkLNT92j52I6BjQKpgp5GqYHxQEWUppEXN5vJHDb/A6IOsh645SSptYGUYV3iuFxPWQILgaJaxZhLX+Abv8BYuIR7yMStmw6p4j4nlUsCbfj7ZowwzhAsZ7wHb193ibf8Hu8IEJrKHdA3QWEeelsIjopJRaWMJyH6pmcQRjxZ2U0lSuaDpv8cT3UIo+iSo69Xr9tNFotMvaXMVCvq7iICKeCgdm2O5Sto69smkW/7Gymiz3noXHOM+HcBgRDyX3+ol9vOEWAV8VcVI/urc+CQAAAABJRU5ErkJggg==") no-repeat center center;
+        }
         .cart-products-count {
           position: absolute;
-          right: -4px;
+          right: 1px;
           top: -8px;
           border-radius: 50%;
           width: 17px;
@@ -186,7 +205,6 @@
       }
       .cart-products-total {
         font-weight: bold;
-        margin-left: 4px;
       }
     }
 

@@ -31,7 +31,7 @@
 
         {* <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span> *}
         <span class="cart-products-icon">
-          <i class="material-icons shopping-cart">shopping_cart</i>
+          <i class="icon-base64"></i>
           <span class="cart-products-count">{$cart.products_count}</span>
         </span>
         <span class="cart-products-total">{$cart.totals.total_including_tax.value}</span>

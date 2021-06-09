@@ -48,7 +48,7 @@
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
-        <i class="material-icons">person</i>
+        <i class="icon-base64"></i>
         <span class="">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
     {/if}
