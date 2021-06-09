@@ -74,24 +74,35 @@
   font-size: 30px;
   line-height: 2.25;
   margin-bottom: .5em;
+  position: relative;
   @include media-breakpoint-down(md) {
     padding-left: 15px;
   }
   @include media-breakpoint-up(md) {
-    display: block;
-    width: 360px;
+    padding-left: 6rem;
+    padding-right: 3rem;
     font-size: 36px;
     text-align: center;
   }
   &::after {
     content: '';
     display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     border-bottom: 1px solid $brand-orange;
     width: 100%;
     @include media-breakpoint-down(md) {
-      width: calc(100% + 15px);
-      margin-left: -15px;
     }
+  }
+  & + p {
+    @include media-breakpoint-down(md) {
+      padding-left: 15px;
+    }
+    @include media-breakpoint-up(md) {
+      padding-left: 6rem;
+    }
+
   }
 }
 

@@ -28,8 +28,6 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 class="wiemar-title text-uppercase">{l s='Oferta' d='Shop.Theme.Homepage'}</h2>
-      </div>
-      <div class="col-xs-12">
         <p>{l s='Tekst pod nagłówkiem Oferta' d='Shop.Theme.Homepage'}</p>
         <br>
         <br>
