@@ -77,9 +77,46 @@
     @include media-breakpoint-up(md) {
       font-size: 10px;
     }
-    &:hover {
-      color: darken($brand-orange, 10%);
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 8px;
+      width: 50px;
+      height: 1px;
+      background-color: $brand-orange;
+      vertical-align: middle;
+      transition: width .3s ease;
     }
+    &::after {
+      content: '';
+      display: inline-block;
+      margin-left: 8px;
+      width: 55px;
+      height: 8px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAICAYAAABd92c+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAhUlEQVQ4y92UsQ3CMBBFny3iGehvBZpIaZAYgSksUTMJtwxSushNVnALM3ANNInkAYws+VVfv3q/uINOMJWHqQxl51tLVSQCs6kcexwHMAGrqYwAzlQurY0q8SzyB7gdgHtrqz/hXWuDWpjKd4sv4BpiTr3d3AKcQswJ+nooCpxDzO+9+AHq1hqfxKYTxwAAAABJRU5ErkJggg==") no-repeat center center;
+      vertical-align: middle;
+      transition: width .3s ease;
+    }
+    @media (hover: hover) {
+      &:not(:hover) {
+        &::after {
+          width: 0;
+        }
+      }
+      &:hover {
+        color: darken($brand-orange, 10%);
+        &::before {
+          width: 0;
+        }
+      }
+    }
+    @media (hover: none) {
+      &::after {
+        width: 0;
+      }
+    }
+
+
   }
   .offer-section-more,
   a {
