@@ -89,6 +89,16 @@ $product-description-height: 70px;
     margin: 16px 0;
     font-size: 12px;
   }
+  .product-desc-txt {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 300;
+  }
+  .product-desc-index {
+    font-size: 12px;
+    font-weight: 700;
+    color: #888;
+  }
   .product-price-and-shipping {
     color: $product-price-and-shipping-color;
     font-weight: 400;

@@ -52,6 +52,10 @@
           {/if}
         {/block}
 
+        <p class="product-desc-txt">{$product.description_short|strip_tags}</p>
+
+        <p class="product-desc-index">{$product.reference_to_display}</p>
+
         {block name='product_price_and_shipping'}
           {if $product.show_price}
             <div class="product-price-and-shipping">

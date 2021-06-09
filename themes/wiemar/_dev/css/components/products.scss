@@ -598,7 +598,6 @@
     line-height: 1;
     text-align: center;
 
-    @include box-shadow-light;
     &.online-only {
       position: absolute;
       top: 25rem;
@@ -617,6 +616,7 @@
     &.discount-amount,
     &.discount {
       background-color: $brand-secondary;
+      DISPLAY:NONE;
     }
     &.on-sale {
       order: -1;
