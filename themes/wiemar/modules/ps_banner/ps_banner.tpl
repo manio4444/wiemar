@@ -32,5 +32,6 @@
        <a class="btn btn-primary banner-button" href="{$banner_link}" title="{$banner_desc}">{l s='Więcej' d='Shop.Theme.Global'}</a>
      </div>
    </div>
+   <div class="chat_button hidden-sm-down"></div>
    {/if}
  </div>

@@ -265,6 +265,18 @@
       margin-bottom: 1em;
       max-width: 550px;
     }
+    .chat_button {
+      position: absolute;
+      right: 40px;
+      bottom: -47px;
+      display: block;
+      width: 95px;
+      height: 95px;
+      background-image: url(../img/chat_button.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      filter: drop-shadow(10px 4px 27px rgba(0,0,0,.21));
+    }
   }
   .breadcrumb {
     background: transparent;
