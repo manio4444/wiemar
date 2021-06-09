@@ -28,7 +28,11 @@
    <h2 class="h2 products-section-title text-uppercase wiemar-title">
      {l s='On sale' d='Shop.Theme.Catalog'}
    </h2>
-   {include file="catalog/_partials/productlist.tpl" products=$products}
+     <p>{l s='Tekst pod nagłówkiem Promocja' d='Shop.Theme.Homepage'}</p>
+     <br>
+     <br>
+
+     {include file="catalog/_partials/productlist.tpl" products=$products}
    <div class="text-xs-center">
      <a class="all-product-link btn btn-primary btn btn-primary" href="{$allSpecialProductsLink}">
        {l s='Zobacz więcej' d='Shop.Theme.Global'}
