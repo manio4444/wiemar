@@ -135,3 +135,16 @@
   }
 
 }
+
+@mixin swiper-bullets($bullet-color, $bullet-active-color) {
+  .swiper-pagination {
+    position: static;
+    margin-bottom: 2rem;
+  }
+  .swiper-pagination-bullet {
+    background: $bullet-color;
+  }
+  .swiper-pagination-bullet-active {
+    background: $bullet-active-color;
+  }
+}

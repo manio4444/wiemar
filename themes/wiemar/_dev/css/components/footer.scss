@@ -174,7 +174,7 @@
     background-color: #3c3c3c;
     .review-item {
       margin: 0;
-      padding: 50px;
+      padding: 50px 50px 25px;
       font-size: 14px;
       @include media-breakpoint-down(sm) {
         text-align: center;
@@ -197,10 +197,13 @@
       }
       .review-text {
         color: #7e7e7e;
+        margin: 0;
       }
     }
 
     @include swiper-controls(#fff);
+
+    @include swiper-bullets(#908b8a, $brand-orange);
   }
 
   #contact_title {

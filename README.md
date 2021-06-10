@@ -16,6 +16,11 @@ cd themes/wiemar/_dev
 npm run build
 ```
 
+## Slider script:
+
+https://swiperjs.com/swiper-api
+
+
 ## Troubleshooting
 
 ### Compiling theme under Windows

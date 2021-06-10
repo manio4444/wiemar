@@ -34,6 +34,7 @@ import './customer';
 import './listing';
 import './product';
 import './cart';
+import './sliders';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';
@@ -48,8 +49,6 @@ import './lib/jquery.scrollbox.min';
 
 import './components/block-cart';
 import $ from 'jquery';
-
-import Swiper from 'swiper/bundle';
 
 // "inherit" EventEmitter
 for (const i in EventEmitter.prototype) {
@@ -83,33 +82,6 @@ $(document).ready(() => {
   });
 });
 
-
-let swiperBrands = new Swiper('#search_filters_brands .swiper-container', {
-  slidesPerView: 2,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    576: {
-      slidesPerView: 3,
-    },
-  },
-});
-let swiperReviews = new Swiper('#users_reviews_slider .swiper-container', {
-  slidesPerView: 1,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-    },
-  },
-});
 
 $(document).ready(function() {
   $(window).scroll(function() {
