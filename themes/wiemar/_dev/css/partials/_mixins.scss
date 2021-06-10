@@ -110,20 +110,40 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: $arrow-color;
+    font-size: 18px;
+    @include media-breakpoint-up(sm) {
+      font-size: 36px;
+    }
+    width: 0.5em;
+    height: 1em;
+    overflow: hidden;
     @media (hover: hover) {
       &:not(:hover) {
         opacity: .4;
       }
     }
 
+    &::before,
     &::after {
-      font-size: 18px;
-      @include media-breakpoint-up(sm) {
-        font-size: 36px;
-      }
+      content: '';
+      width: 200%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      height: 1px;
+      background: $arrow-color;
+    }
+    &::before {
+      transform-origin: right bottom;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform-origin: right top;
+      transform: rotate(45deg);
     }
   }
   .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    transform: scaleX(-1);
     @include media-breakpoint-up(md) {
       left: 0;
     }
