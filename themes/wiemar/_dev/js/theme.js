@@ -84,12 +84,30 @@ $(document).ready(() => {
 
 
 $(document).ready(function() {
-  $(window).scroll(function() {
+  $(window).scroll(function(e) {
     if ($(this).scrollTop() > 100) {
       $('#back-to-top').fadeIn();
     } else {
       $('#back-to-top').fadeOut();
     }
+
+    const windowBottomPos = window.scrollY + window.innerHeight;
+    const documentHeight = document.body.scrollHeight;
+    const documentHeightPercent = Math.round(windowBottomPos / documentHeight * 100);
+
+    let animationRightDeg, animationLeftDeg;
+
+    if (documentHeightPercent < 50) {
+      animationRightDeg = Math.round(3.6 * documentHeightPercent);
+      animationLeftDeg = 0;
+    } else {
+      animationRightDeg = 180;
+      animationLeftDeg = Math.round(3.6 * documentHeightPercent) - 180;
+    }
+
+    document.documentElement.style.setProperty('--back-to-top-animation-right-deg', animationRightDeg + 'deg');
+    document.documentElement.style.setProperty('--back-to-top-animation-left-deg', animationLeftDeg + 'deg');
+
   });
 
   $('#back-to-top').click(function() {

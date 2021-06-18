@@ -101,7 +101,15 @@
     </main>
 
     {block name='back_to_top'}
-      <div id="back-to-top"></div>
+      <div id="back-to-top">
+          <div class='hold left'>
+              <div class='fill'></div>
+          </div>
+          <div class='hold right'>
+              <div class='fill'></div>
+          </div>
+          <div class="center-round"></div>
+      </div>
     {/block}
 
     {block name='javascript_bottom'}
