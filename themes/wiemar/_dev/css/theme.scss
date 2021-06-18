@@ -206,6 +206,33 @@
       .cart-products-total {
         font-weight: bold;
       }
+
+      .cart-floating-fixed {
+        position: fixed;
+        left: 30px;
+        bottom: 25px;
+        width: 43px;
+        height: 43px;
+        box-shadow: 0px 4px 13.6px 2.4px rgba(0, 0, 0, 0.12);
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        .cart-products-icon {
+          position: static;
+        }
+        .icon-base64 {
+          margin: 0;
+        }
+        .cart-products-count {
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 11px;
+          right: -5px;
+        }
+      }
     }
 
 

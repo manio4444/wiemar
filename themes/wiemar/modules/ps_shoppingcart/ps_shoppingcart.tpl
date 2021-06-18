@@ -40,4 +40,12 @@
       {/if}
     </div>
   </div>
+
+  <a rel="nofollow" href="{$cart_url}" class="cart-floating-fixed blockcart cart-preview  {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
+    <span class="cart-products-icon">
+      <i class="icon-base64"></i>
+      <span class="cart-products-count">{$cart.products_count}</span>
+    </span>
+  </a>
+
 </div>
