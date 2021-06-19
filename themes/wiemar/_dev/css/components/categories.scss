@@ -343,6 +343,14 @@
       border-left: 1px solid #f2f2f2;
     }
 
+    .collapse {
+      display: block;
+    }
+
+    .navbar-toggler:not([aria-expanded="true"]) + .collapse {
+      display: none;
+    }
+
   }
   .collapse-icons {
     position: absolute;
@@ -468,9 +476,6 @@
             &.in {
               display: block;
             }
-          }
-          .navbar-toggler.collapsed + .collapse {
-            display: none;
           }
           .facet-label {
             a {
