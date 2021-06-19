@@ -25,6 +25,7 @@
   .block-category-inner{
       display: flex;
       justify-content: space-between;
+      margin-bottom: 1em;
       #category-description {
     p,
     strong {
@@ -63,7 +64,10 @@
     color: #656565;
   }
   .total-products {
-    padding-top: 0.625rem;
+    //padding-top: 0.625rem;
+    * {
+      display: none;
+    }
   }
   h1 {
     padding-top: 0.625rem;
@@ -460,10 +464,13 @@
             padding: 0.625rem 0.625rem 0 0;
           }
           .collapse {
-            display: none;
+            display: block;
             &.in {
               display: block;
             }
+          }
+          .navbar-toggler.collapsed + .collapse {
+            display: none;
           }
           .facet-label {
             a {
