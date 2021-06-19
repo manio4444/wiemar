@@ -61,7 +61,8 @@
 
 <div class="block-categories hidden-sm-down">
   <ul class="category-top-menu">
-    <li><a class="text-uppercase h6 block-categories-heading" href="{$categories.link nofilter}">{$categories.name}</a></li>
+<!--    <li><a class="text-uppercase h6 block-categories-heading" href="{$categories.link nofilter}">{$categories.name}</a></li>-->
+    <li class="text-uppercase h6 block-categories-heading">{l s='Oferta' d='Shop.Theme.Catalog'}</li>
     <li>{categories nodes=$categories.children}</li>
   </ul>
 </div>
