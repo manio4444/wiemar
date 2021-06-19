@@ -26,7 +26,10 @@
 <section class="featured-products clearfix mt-3">
  <div class="container">
    <h2 class="h2 products-section-title text-uppercase wiemar-title">
-     {l s='On sale' d='Shop.Theme.Catalog'}
+     <a href="{$allSpecialProductsLink}">
+       {l s='On sale' d='Shop.Theme.Catalog'}
+     </a>
+
    </h2>
      <p>{l s='Tekst pod nagłówkiem Promocja' d='Shop.Theme.Homepage'}</p>
      <br>

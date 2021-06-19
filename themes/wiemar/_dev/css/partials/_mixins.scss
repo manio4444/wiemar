@@ -95,6 +95,9 @@
     @include media-breakpoint-down(md) {
     }
   }
+  a {
+    color: inherit;
+  }
   & + p {
     @include media-breakpoint-down(md) {
       padding-left: 15px;
