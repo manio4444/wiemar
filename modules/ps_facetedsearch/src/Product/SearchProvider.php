@@ -79,6 +79,8 @@ class SearchProvider implements FacetsRendererInterface, ProductSearchProviderIn
         $sortNameDesc = new SortOrder('product', 'name', 'desc');
         $sortPriceAsc = new SortOrder('product', 'price', 'asc');
         $sortPriceDesc = new SortOrder('product', 'price', 'desc');
+        $sortDateAsc = new SortOrder('product', 'date_add', 'asc');
+        $sortDateDesc = new SortOrder('product', 'date_add', 'desc');
         $translator = $this->module->getTranslator();
 
         return [
@@ -99,6 +101,12 @@ class SearchProvider implements FacetsRendererInterface, ProductSearchProviderIn
             ),
             $sortPriceDesc->setLabel(
                 $translator->trans('Price, high to low', [], 'Shop.Theme.Catalog')
+            ),
+            $sortDateAsc->setLabel(
+                $translator->trans('Najstarsze', [], 'Shop.Theme.Catalog')
+            ),
+            $sortDateDesc->setLabel(
+                $translator->trans('Najnowsze', [], 'Shop.Theme.Catalog')
             ),
         ];
     }
