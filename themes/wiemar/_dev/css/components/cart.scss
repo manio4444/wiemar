@@ -1,3 +1,15 @@
+body#cart {
+  .breadcrumb[data-depth="1"] {
+    display: block;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
 .cart-grid {
   margin-bottom: 1rem;
 }
