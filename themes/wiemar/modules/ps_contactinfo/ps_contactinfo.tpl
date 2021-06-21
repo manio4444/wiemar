@@ -43,7 +43,7 @@
     <br>
     {/if}
 
-    <i class="material-icons">description</i><span>NIP: 822-223-98-00</span>
+    <i class="material-icons">description</i><span>NIP: {l s='NIP number' d='Shop.Theme.Contact_page'}</span>
     <br>
 
   </div>

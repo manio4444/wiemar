@@ -86,7 +86,7 @@ global_settings:
       displayFooter:
         - ps_contactinfo
         - ps_linklist
-        - ps_customeraccountlinks
+#        - ps_customeraccountlinks
         - ps_emailsubscription
       displayFooterAfter:
         - blockreassurance

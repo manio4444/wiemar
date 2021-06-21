@@ -40,7 +40,7 @@
 
         <div class="form-group row">
           <div class="col-md-9 col-md-offset-3">
-            <h3>{l s='Contact us' d='Shop.Theme.Global'}</h3>
+            <h3 class="contact-page-title">{l s='Contact us' d='Shop.Theme.Global'}</h3>
           </div>
         </div>
 
@@ -103,7 +103,7 @@
             <textarea
               class="form-control"
               name="message"
-              placeholder="{l s='How can we help?' d='Shop.Forms.Help'}"
+              placeholder="{l s='your@email.com' d='Shop.Forms.Help'}"
               rows="5"
             >{if $contact.message}{$contact.message}{/if}</textarea>
           </div>
