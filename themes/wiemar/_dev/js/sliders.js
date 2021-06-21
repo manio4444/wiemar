@@ -11,6 +11,9 @@ let swiperBrands = new Swiper('#search_filters_brands .swiper-container', {
     576: {
       slidesPerView: 3,
     },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 });
 let swiperReviews = new Swiper('#users_reviews_slider .swiper-container', {
