@@ -3,6 +3,29 @@ body#cart {
     display: block;
     margin: 0;
   }
+  .cart-container {
+    box-shadow: none;
+    border: none;
+    .card-block {
+      padding: 0 1rem 1rem;
+    }
+    .cart-container-title {
+      font-size: 30px;
+      margin-bottom: 0.5em;
+    }
+  }
+  .cart-summary {
+    box-shadow: none;
+    border: none;
+    .card-block {
+      border: 1px solid #f2f2f2;
+    }
+  }
+  .cart-grid-right {
+    @include media-breakpoint-up(lg) {
+      padding-top: 64px;
+    }
+  }
 }
 
 
@@ -96,6 +119,7 @@ body#cart {
   }
   .cart-overview {
     padding: 1rem;
+    border: 1px solid #f2f2f2;
   }
   margin-bottom: 0.75rem;
 }
