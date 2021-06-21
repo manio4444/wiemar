@@ -471,6 +471,12 @@ input[type=number] {
 
 //contact page
 #contact {
+  .contact-page-text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 3em;
+  }
+
   .page-content.card.card-block {
     border: none;
     box-shadow: 0px 0px 44.59px 4.41px rgba(0, 0, 0, 0.1);

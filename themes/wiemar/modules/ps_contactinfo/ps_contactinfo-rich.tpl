@@ -25,38 +25,32 @@
 
 <div class="contact-rich">
   <h4>{l s='Store information' d='Shop.Theme.Global'}</h4>
-  <div class="block">
-    <div class="icon"><i class="material-icons">&#xE55F;</i></div>
-    <div class="data">{$contact_infos.address.formatted nofilter}</div>
-  </div>
-  {if $contact_infos.phone}
-    <hr/>
-    <div class="block">
-      <div class="icon"><i class="material-icons">&#xE0CD;</i></div>
-      <div class="data">
-        {l s='Call us:' d='Shop.Theme.Global'}<br/>
-        <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
-       </div>
+    <p class="contact-page-text">{l s='Contact page text' d='Shop.Theme.Contact_page'}</p>
+
+    <div class="block-contact">
+        <div class="block-contact-container">
+            <p class="block-contact-title footer-medium-title">{$contact_infos.company}</p>
+            {* {$contact_infos.address.formatted nofilter} *}
+
+            <i class="material-icons">place</i><span>{$contact_infos.address.address1}{$contact_infos.address.address2}, {$contact_infos.address.postcode} {$contact_infos.address.city}</span>
+            <br>
+            <i class="material-icons">phone</i><span><a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a></span>
+            <br>
+
+            {if $contact_infos.fax}
+            <i class="material-icons">phone</i><span>{$contact_infos.fax}</span>
+            <br>
+            {/if}
+
+            {if $contact_infos.email && $display_email}
+            <i class="material-icons">mail</i><span><a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a></span>
+            <br>
+            {/if}
+
+            <i class="material-icons">description</i><span>NIP: 822-223-98-00</span>
+            <br>
+
+        </div>
     </div>
-  {/if}
-  {if $contact_infos.fax}
-    <hr/>
-    <div class="block">
-      <div class="icon"><i class="material-icons">&#xE0DF;</i></div>
-      <div class="data">
-        {l s='Fax:' d='Shop.Theme.Global'}<br/>
-        {$contact_infos.fax}
-      </div>
-    </div>
-  {/if}
-  {if $contact_infos.email && $display_email}
-    <hr/>
-    <div class="block">
-      <div class="icon"><i class="material-icons">&#xE158;</i></div>
-      <div class="data email">
-        {l s='Email us:' d='Shop.Theme.Global'}<br/>
-      </div>
-      <a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a>
-    </div>
-  {/if}
+
 </div>
