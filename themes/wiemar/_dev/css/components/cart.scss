@@ -271,9 +271,25 @@ body#cart {
   > .product-line-info {
     > .label {
       padding: 0;
-      line-height: inherit;
+      font-size: 16px;
+      line-height: 24px;
       text-align: left;
       white-space: inherit;
+      font-weight: bold;
+      margin-bottom: 1em;
+      &:hover {
+        color: $brand-orange;
+      }
+    }
+    .product-desc-txt {
+      margin: 0;
+      font-size: 12px;
+      font-weight: lighter;
+    }
+    .product-desc-index {
+      color: #888;
+      font-size: 12px;
+      font-weight: bold;
     }
     > .out-of-stock {
       color: red;
@@ -287,12 +303,30 @@ body#cart {
       color: $gray;
     }
   }
+
+  .product-price {
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-wrap: wrap;
+    .product-price-pre-label {
+
+    }
+    .regular-price {
+      font-weight: inherit;
+    }
+    .product-discount {
+      .discount-amount {
+        display: none;
+      }
+    }
+  }
 }
 /** CONTENT LEFT **/
 .product-line-grid-right {
   .cart-line-product-actions,
   .product-price {
-    color: $gray-darker;
+    color: #3c3c3c;
     line-height: 36px;
     .remove-from-cart {
       color: $gray-darker;

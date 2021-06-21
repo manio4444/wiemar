@@ -38,9 +38,12 @@
   <div class="product-line-grid-body col-md-4 col-xs-8">
     <div class="product-line-info">
       <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+      <p class="product-desc-txt">{$product.description_short|strip_tags}</p>
+      <p class="product-desc-index">{$product.reference_to_display}</p>
     </div>
 
     <div class="product-line-info product-price h5 {if $product.has_discount}has-discount{/if}">
+      <span class="product-price-pre-label">{l s='Cena:' d='Shop.Theme.Checkout'}&nbsp;</span>
       {if $product.has_discount}
         <div class="product-discount">
           <span class="regular-price">{$product.regular_price}</span>
@@ -142,7 +145,7 @@
                 {if isset($product.is_gift) && $product.is_gift}
                   <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
                 {else}
-                  {$product.total}
+                  {$product.total}/{l s='Tax included' d='Shop.Theme.Checkout'}
                 {/if}
               </strong>
             </span>
