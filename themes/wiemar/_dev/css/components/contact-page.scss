@@ -41,4 +41,34 @@
       }
     }
   }
+
+  #search_filters_brands {
+    display: none !important;
+  }
+  #users_reviews_slider {
+    display: none !important;
+  }
+  #contact_title {
+    display: none !important;
+  }
+  #footer .block-contact {
+    display: none !important;
+  }
+  #footer .links {
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+    .footer-medium-title {
+      border-top: 1px solid $brand-orange;
+      padding-top: 2em;
+    }
+  }
+  #footer .block_newsletter {
+    @include media-breakpoint-up(md) {
+      margin-left: calc(100% - (100% / 12 * 10));
+      padding-top: 2em;
+    }
+  }
+
+
 }
