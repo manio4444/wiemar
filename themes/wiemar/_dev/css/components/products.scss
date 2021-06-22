@@ -94,42 +94,6 @@
   .qty {
     margin-right: 0.4rem;
   }
-  #quantity_wanted {
-    color: $gray-darker;
-    background-color: white;
-    height: 2.75rem;
-    padding: 0.175rem 0.5rem;
-    width: 3rem;
-  }
-  .input-group-btn-vertical {
-    width: auto;
-    .btn {
-      padding: 0.5rem 0.6875rem;
-      i {
-        font-size: 1rem;
-        top: 0.125rem;
-        left: 0.1875rem;
-      }
-    }
-  }
-  .btn-touchspin {
-    height: 1.438rem;
-  }
-
-  .bootstrap-touchspin input.form-control, .bootstrap-touchspin input.input-group {
-    border: 2px solid #f2f2f2;
-    border-right: none;
-  }
-  .bootstrap-touchspin .input-group-btn-vertical .btn-touchspin {
-    border: 2px solid #f2f2f2;
-    border-left: none;
-  }
-  .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
-    border-top: none;
-  }
-  .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up {
-    border-bottom: none;
-  }
 
 }
 .product-discounts {

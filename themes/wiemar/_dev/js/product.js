@@ -101,7 +101,7 @@ $(document).ready(function () {
     const $quantityInput = $('#quantity_wanted');
 
     $quantityInput.TouchSpin({
-      verticalbuttons: true,
+      // verticalbuttons: true,
       verticalupclass: 'material-icons touchspin-up',
       verticaldownclass: 'material-icons touchspin-down',
       buttondown_class: 'btn btn-touchspin js-touchspin',

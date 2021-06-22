@@ -255,62 +255,53 @@ input, textarea {
     padding: 0.5rem 1rem;
   }
 }
-.bootstrap-touchspin {
+.bootstrap-touchspin:not(.hack) {
   width: auto;
-  float: left;
-  display: inline-block;
-  //@include box-shadow-light;
-  input {
+  display: inline-flex;
+  border: 2px solid #f2f2f2;
+  float: none;
+  font-size: 16px;
+
+  .input-group-btn {
+    font-size: inherit;
+    width: 1.875em;
+    height: 3.75em;
+
+    button {
+      border: 0;
+      border-radius: 0;
+      color: #000;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      @media (hover: hover) {
+        &:hover {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+
+  input.form-control {
+    float: none;
+    font-size: inherit;
+    width: 2.25em;
+    height: 3.75em;
+    text-align: center;
+    border: none;
+    padding: 0;
+
     &:focus {
       outline: none;
-    }
-    &.form-control,
-    &.input-group {
-      color: $gray-darker;
-      background-color: white;
-      height: $input-height;
-      padding: 0.175rem 0.5rem;
-      width: 3rem;
-      border: $input-btn-border-width solid $input-border-color;
-      float: left;
-    }
-  }
-  .btn-touchspin {
-    @extend .btn-default;
-    background-color: white;
-    border: $input-btn-border-width solid $input-border-color;
-    height: $input-height / 2 + 0.0625rem;
-    &:hover {
-      background-color: $gray-light;
-    }
-  }
-  .input-group-btn-vertical {
-    color: $gray-darker;
-    width: auto;
-    float: left;
-    .bootstrap-touchspin-up {
-      border-radius: 0;
-    }
-    .bootstrap-touchspin-down {
-      border-radius: 0;
-    }
-    .touchspin-up {
-      &:after {
-        content: "\E5CE";
-      }
-    }
-    .touchspin-down {
-      &:after {
-        content: "\E5CF";
-      }
-    }
-    i {
-      top: 0.0625rem;
-      left: 0.1875rem;
-      font-size: 0.9375rem;
+      background-color: transparent;
     }
   }
 }
+
 .custom-radio {
   display: inline-block;
   position: relative;
