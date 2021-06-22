@@ -31,13 +31,14 @@
         <div class="cart-summary-line" id="cart-subtotal-{$subtotal.type}">
           <span class="label{if 'products' === $subtotal.type} js-subtotal{/if}">
             {if 'products' == $subtotal.type}
-              {$cart.summary_string}
+              {* {$cart.summary_string} *}
+              {l s='Suma' d='Shop.Theme.Checkout'}:
             {else}
               {$subtotal.label}
             {/if}
           </span>
           <span class="value">
-            {if 'discount' == $subtotal.type}-&nbsp;{/if}{$subtotal.value}
+              {if 'discount' == $subtotal.type}-&nbsp;{/if}{$subtotal.value}{if 0 !== $subtotal.amount}/<span class="text-lowercase">{l s='Tax included' d='Shop.Theme.Checkout'}</span>{/if}
           </span>
           {if $subtotal.type === 'shipping'}
               <div><small class="value">{hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
