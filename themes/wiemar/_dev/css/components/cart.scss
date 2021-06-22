@@ -184,6 +184,8 @@ body#cart {
 
 .block-promo {
   margin-bottom: 1rem;
+  border: 1px solid #f2f2f2;
+  border-top: none;
 
   .promo-code {
     padding: 1rem;
@@ -209,20 +211,19 @@ body#cart {
     }
     form {
       text-align: center;
+      display: flex;
     }
   }
   .promo-input {
-    color: $gray-darker;
-    border: $gray 1px solid;
-    height: 2.5rem;
-    text-indent: 0.625rem;
-    width: 50%;
-    margin-right: -.24rem;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 42px;
+    line-height: 20px;
+    padding: 9px 22px;
+    font-size: 14px;
+    margin-right: 5px;
+    flex-grow: 1;
     + button {
-      margin-top: -4px;
-      margin-left: -1px;
-      text-transform: capitalize;
-      border: 2px solid $brand-primary;
     }
   }
   .cart-summary-line .label,
@@ -254,7 +255,7 @@ body#cart {
   .promo-code-button {
     display: block;
     text-align: center;
-    padding: 0 0 1rem;
+    padding: 1rem 0;
 
     &.with-discounts {
       display: none;
