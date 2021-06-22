@@ -66,6 +66,12 @@
       </div>
     </div>
 
+    <div class="product-line-info product-amount">
+      <span class="product-amount-pre-label">{l s='Quantity' d='Shop.Theme.Actions'}:&nbsp;</span>
+      <span class="product-amount-number">{$product.quantity}</span>
+    </div>
+
+
     <br/>
 
     {foreach from=$product.attributes key="attribute" item="value"}
