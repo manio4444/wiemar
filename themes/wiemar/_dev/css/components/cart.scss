@@ -84,6 +84,13 @@ body#cart {
       }
     }
   }
+
+  &.cart-detailed-actions {
+    border: none !important;
+    .btn {
+      padding: 20px 64px;
+    }
+  }
 }
 
 .cart-summary-line {
@@ -156,6 +163,22 @@ body#cart {
         font-size: 1rem;
       }
     }
+  }
+}
+
+.cart-continue-shopping {
+  color: #656565;
+  font-size: 13px;
+  text-decoration: underline;
+  i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: $brand-orange;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, .5);
+    margin-right: 10px;
   }
 }
 
