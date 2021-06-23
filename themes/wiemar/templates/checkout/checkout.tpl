@@ -39,7 +39,7 @@
 
     <header id="header">
       {block name='header'}
-        {include file='checkout/_partials/header.tpl'}
+        {include file='_partials/header.tpl'}
       {/block}
     </header>
 
@@ -77,7 +77,7 @@
 
     <footer id="footer">
       {block name='footer'}
-        {include file='checkout/_partials/footer.tpl'}
+        {include file='_partials/footer.tpl'}
       {/block}
     </footer>
 
