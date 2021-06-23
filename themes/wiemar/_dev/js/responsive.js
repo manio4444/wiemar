@@ -77,3 +77,24 @@ $(document).ready(function() {
 		toggleMobileStyles();
 	}
 });
+
+function determineSubMenuOverflow () {
+	const windowWidth = $( window ).width();
+
+	$('.menu-desktop-wrapper .top-menu .sub-menu').each(function (i ,subMenu) {
+		const subMenuWidth = $(subMenu).width();
+		const subMenuOffset = $(subMenu).offset();
+
+		$(subMenu).removeClass('right');
+
+		if (subMenuOffset.left + subMenuWidth > windowWidth) {
+			$(subMenu).addClass('right');
+		}
+	});
+}
+
+$(document).ready(function() {
+	$(window).on('resize', () => determineSubMenuOverflow());
+
+	determineSubMenuOverflow();
+});

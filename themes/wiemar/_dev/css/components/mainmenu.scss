@@ -68,6 +68,7 @@
     }
   }
   a[data-depth="1"] {
+    display: block;
     border-radius: 0 42px 42px 0;
     padding: 0 28px;
     line-height: 42px;
@@ -89,6 +90,11 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
+    &.right {
+      left: auto;
+      right: 0;
+      border-radius: 7px 0 7px 7px;
+    }
     @include media-breakpoint-down(md) { //BECAUSE ITS NOT NEEDED ON MOBILE
       display: none;
     }
@@ -99,24 +105,32 @@
       left: 0;
       right: -24px;
       height: 250px;
-      background-image: url(../img-cat-menu/menu-battery.png);
+      //background-image: look for DESKTOP SUBMENU BACKGROUNDS section in this file
       background-position: right top;
       background-repeat: no-repeat;
+      background-size: contain;
       pointer-events: none;
-
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
-      .top-menu[data-depth="0"] li[id^="category-"] & { background-image: url(../img-cat-menu/menu-battery.png); }
-
     }
 
     .title {
       color: #a5a5a5;
       padding: 28px;
     }
+  }
+}
+// ######## DESKTOP SUBMENU BACKGROUNDS
+.menu-desktop-wrapper .top-menu[data-depth="0"] li {
+  &[id^="category-10"] .sub-menu::before { background-image: url(../img-categories/cat-screens.png); }
+  &[id^="category-11"] .sub-menu::before { background-image: url(../img-categories/cat-body.png); }
+  &[id^="category-12"] .sub-menu::before { background-image: url(../img-categories/cat-tapes.png); }
+  &[id^="category-13"] .sub-menu::before { background-image: url(../img-categories/cat-connectors.png); }
+  &[id^="category-14"] .sub-menu::before { background-image: url(../img-categories/cat-batteries.png); }
+  &[id^="category-15"] .sub-menu::before { background-image: url(../img-categories/cat-chargers.png); }
+  &[id^="category-16"] .sub-menu::before { background-image: url(../img-categories/cat-other.png); }
+
+  &[id^="category-12"] .sub-menu::before {
+    height: 200px;
+    right: -40px;
   }
 }
 
