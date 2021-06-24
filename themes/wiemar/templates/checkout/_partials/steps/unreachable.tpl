@@ -23,6 +23,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='step'}
+  <div class="steps-progress" style="order: {$position - 10}">
+    <span class="steps-progress-number">{$position}</span>
+    <span class="steps-progress-title">{$title}</span>
+  </div>
+
   <section class="checkout-step -unreachable" id="{$identifier}">
     <h1 class="step-title h3">
       <span class="step-number">{$position}</span> {$title}

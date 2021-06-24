@@ -23,6 +23,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='step'}
+  <div class="steps-progress {['active' => $step_is_reachable]|classnames}" style="order: {$position - 10}">
+    <span class="steps-progress-number">{$position}</span>
+    <span class="steps-progress-title">{$title}</span>
+  </div>
+
   <section  id    = "{$identifier}"
             class = "{[
                         'checkout-step'   => true,
@@ -34,8 +39,8 @@
   >
     <h1 class="step-title h3">
       <i class="material-icons rtl-no-flip done">&#xE876;</i>
-      <span class="step-number">{$position}</span>
-      {$title}
+      {* <span class="step-number">{$position}</span> *}
+      {* {$title} *}
       <span class="step-edit text-muted"><i class="material-icons edit">mode_edit</i> {l s='Edit' d='Shop.Theme.Actions'}</span>
     </h1>
 

@@ -14,12 +14,66 @@ body#checkout {
     color: #1a8196;
   }
   section#content {
+    margin-top: 4rem;
     margin-bottom: 1.563rem;
   }
   .container {
     min-height: 100%;
   }
+  .cart-grid-body {
+    display: flex;
+    flex-wrap: wrap;
+    .steps-progress {
+      --steps-progress-number-size: 38px;
+      pointer-events: none;
+      position: relative;
+      flex-basis: var(--steps-progress-number-size);
+      margin-bottom: 4rem;
+      &:not(:last-of-type) {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        &::after {
+          flex-grow: 1;
+          content: '';
+          border-bottom: 1px solid #f2f2f2;
+        }
+      }
+      &:first-of-type { margin-left: 50px; }
+      &:last-of-type { margin-right: 50px; }
+        .steps-progress-number {
+        display: block;
+        width: var(--steps-progress-number-size);
+        height: var(--steps-progress-number-size);
+        line-height: var(--steps-progress-number-size);
+        border-radius: 50%;
+        background-color: #9d9d9d;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .steps-progress-title {
+        position: absolute;
+        left: calc(var(--steps-progress-number-size) / 2);
+        transform: translateX(-50%);
+        bottom: -2.5em;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &.active {
+        .steps-progress-number {
+          background-color: $brand-orange;
+        }
+        .steps-progress-title {
+          color: $brand-orange;
+        }
+      }
+    }
+  }
   section.checkout-step {
+    flex-basis: 100%;
     background-color: white;
     border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
     padding: 0.9375rem;
@@ -97,6 +151,34 @@ body#checkout {
         display: none;
       }
     }
+
+    .nav.nav-inline {
+      display: flex;
+      .nav-item {
+        flex-grow: 1;
+        height: 45px;
+        margin: 0;
+        .nav-link {
+          font-size: 12px;
+          line-height: 17px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          text-transform: uppercase;
+          color: #9d9d9d;
+          &.active {
+            color: #0e0e0e;
+          }
+          &:not(.active) {
+            background-color: #f2f2f2;
+          }
+        }
+      }
+    }
+
     small {
       color: $gray;
     }
@@ -379,6 +461,13 @@ body#checkout {
       margin-bottom: 10px;
     }
   }
+
+  .cart-grid-right {
+    & > .card {
+      box-shadow: none;
+    }
+  }
+
   #footer {
     border-top: 1px solid #f2f2f2;
   }
