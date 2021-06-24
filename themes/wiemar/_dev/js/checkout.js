@@ -75,3 +75,20 @@ $(document).ready(() => {
     params.deliveryOption.next(".carrier-extra-content").slideDown();
   });
 });
+
+$('.steps-progress-number').click(e => {
+  e.preventDefault();
+
+  const stepElement = $(e.currentTarget);
+  const stepNumber = stepElement.text();
+
+  setTimeout(() => {
+    $(`section[data-step=${stepNumber}]`).click();
+
+    $('.steps-progress[data-step]').each((i, step) => {
+      if ($(step).attr('data-step') > stepNumber) {
+        $(step).removeClass('active');
+      }
+    })
+  }, 0); //inside setTimeout, because of core prestashop JS
+});

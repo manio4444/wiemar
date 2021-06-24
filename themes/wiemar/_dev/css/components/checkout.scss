@@ -25,7 +25,6 @@ body#checkout {
     flex-wrap: wrap;
     .steps-progress {
       --steps-progress-number-size: 38px;
-      pointer-events: none;
       position: relative;
       flex-basis: var(--steps-progress-number-size);
       margin-bottom: 4rem;
@@ -65,11 +64,13 @@ body#checkout {
       &.active {
         .steps-progress-number {
           background-color: $brand-orange;
+          cursor: pointer;
         }
         .steps-progress-title {
           color: $brand-orange;
         }
       }
+      &:not(.active) { pointer-events: none; }
     }
   }
   section.checkout-step {
@@ -105,6 +106,14 @@ body#checkout {
     .step-edit {
       display: none;
     }
+
+    // ######## CUSTOM
+    &.-complete:not(.-current),
+    &.-unreachable {
+      display: none;
+    }
+    // ########
+
     &.-unreachable {
       .step-title {
         cursor: not-allowed;
@@ -457,7 +466,7 @@ body#checkout {
     max-width: 100%;
     border-color: $gray-darker;
     textarea {
-      max-width: 100%;
+      width: 100%;
       margin-bottom: 10px;
     }
   }

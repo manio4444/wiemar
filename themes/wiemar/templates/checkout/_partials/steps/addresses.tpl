@@ -36,6 +36,7 @@
         <h2 class="h4">{l s='Shipping Address' d='Shop.Theme.Checkout'}</h2>
       {/if}
 
+      <br><br>
       {if $use_same_address && !$cart.is_virtual}
         <p>
           {l s='The selected address will be used both as your personal address (for invoice) and as your delivery address.' d='Shop.Theme.Checkout'}

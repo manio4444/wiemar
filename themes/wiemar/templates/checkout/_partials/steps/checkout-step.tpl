@@ -23,7 +23,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='step'}
-  <div class="steps-progress {['active' => $step_is_reachable]|classnames}" style="order: {$position - 10}">
+  <div
+    class="steps-progress {['active' => $step_is_reachable]|classnames}"
+    style="order: {$position - 10}"
+    data-step="{$position}"
+  >
     <span class="steps-progress-number">{$position}</span>
     <span class="steps-progress-title">{$title}</span>
   </div>
@@ -36,6 +40,7 @@
                         '-complete'       => $step_is_complete,
                         'js-current-step' => $step_is_current
                     ]|classnames}"
+            data-step="{$position}"
   >
     <h1 class="step-title h3">
       <i class="material-icons rtl-no-flip done">&#xE876;</i>
