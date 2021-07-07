@@ -113,6 +113,9 @@ p {
     border: $input-btn-border-width solid rgba(35, 35, 35, 0.2);
   }
 }
+.btn-big {
+  padding: 20px 64px;
+}
 .btn-unstyle {
   background-color: transparent;
   border: none;

@@ -76,9 +76,9 @@
     width: 100%;
   }
   .add-to-cart {
-    height: 2.75rem;
     line-height: inherit;
-    padding-top: 0.625rem;
+    padding-left: 32px;
+    padding-right: 32px;
     .material-icons {
       line-height: inherit;
     }
@@ -86,6 +86,7 @@
 }
 .product-quantity {
   display: flex;
+  align-items: center;
   .qty, .add {
     float: left;
     display: inline-flex;

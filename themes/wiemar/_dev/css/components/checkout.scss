@@ -76,7 +76,7 @@ body#checkout {
   section.checkout-step {
     flex-basis: 100%;
     background-color: white;
-    border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
+    //border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
     padding: 0.9375rem;
     &:last-child {
       border: 0;
@@ -216,6 +216,7 @@ body#checkout {
     }
     .form-footer {
       text-align: center;
+      margin-bottom: 3rem;
     }
     #conditions-to-approve {
       padding-top: 1rem;
@@ -580,6 +581,9 @@ body#checkout {
   }
 }
 #order-confirmation {
+  .card {
+    box-shadow: none;
+  }
   #registration-form {
     width: 50%;
     margin: 0 auto 1rem;
