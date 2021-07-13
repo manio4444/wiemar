@@ -269,24 +269,39 @@
     position: relative;
     img {
       width: 100%;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
     .banner-content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
       display: flex;
       align-items: center;
       color: #fff;
+      @include media-breakpoint-down(md) {
+        padding: 4rem 0;
+        background-position: center;
+        background-size: cover;
+      }
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: none;
+      }
     }
     .banner-title {
-      font-size: 48px;
+      font-size: 32px;
       line-height: 1.25;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: .1em;
       max-width: 550px;
+      @include media-breakpoint-up(lg) {
+        font-size: 48px;
+
+      }
     }
     .banner-text {
       line-height: 1.625;

@@ -25,7 +25,7 @@
  <div class="banner">
    {if isset($banner_img)}
    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
-   <div class="banner-content">
+   <div class="banner-content" style=" background-image: url({$banner_img})">
      <div class="container banner-container">
        <div class="banner-title">{l s='Oryginalne części  i akcesoria GSM' d='Shop.Theme.Homepage'}</div>
 <!--       <div class="banner-text">{$banner_desc}</div>-->
