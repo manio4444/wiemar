@@ -30,7 +30,7 @@
 
 {block name='header_nav'}
   <nav class="header-shipment-banner">
-    <div class="container container-shipment-banner hidden-sm-down">
+    <div class="container container-shipment-banner hidden-md-down">
       <div class="col-orange">
         Wysyłka kurierem DPD realizowana do godziny&nbsp;<b>12:00</b>
       </div>
