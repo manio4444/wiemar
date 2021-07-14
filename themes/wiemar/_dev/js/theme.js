@@ -35,6 +35,7 @@ import './listing';
 import './product';
 import './cart';
 import './sliders';
+import './search-widget';
 
 import prestashop from 'prestashop';
 import EventEmitter from 'events';

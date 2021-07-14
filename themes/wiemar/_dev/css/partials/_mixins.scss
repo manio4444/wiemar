@@ -8,13 +8,14 @@
       font-size: 14px;
     }
     .category-toggle-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border: 1px solid $brand-orange;
       border-radius: 36px 0 0 36px;
       border-right: none;
       text-transform: uppercase;
+      max-width: 8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       padding: 0 35px 0 15px;
       font-weight: 600;
       background: transparent;
@@ -27,6 +28,18 @@
       }
     }
     .category-toggle-menu {
+      margin: 0;
+      padding: 0;
+    }
+    .category-toggle-element {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+      a {
+        padding: 3px 15px;
+        display: block;
+      }
     }
 
     input[type=text] {

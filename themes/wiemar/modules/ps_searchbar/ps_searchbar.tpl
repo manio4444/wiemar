@@ -29,7 +29,7 @@
             <button class="dropdown-toggle category-toggle-btn" type="button" id="dropdown-search-widget" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 {l s='Kategorie' d='Shop.Theme.Catalog'}
             </button>
-            <input type="hidden" class="category-toggle-input" name="PRESTA_API_CATEGORY_ID_HERE???">
+            <input type="hidden" class="category-toggle-input" name="id_category">
 
             {assign var='mainPageSubCategories' value=Category::getChildren(2, 1, true, false)}
             <ul class="dropdown-menu category-toggle-menu" aria-labelledby="dropdown-search-widget">
