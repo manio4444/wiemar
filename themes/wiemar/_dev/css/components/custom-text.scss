@@ -24,6 +24,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include media-breakpoint-between(md, md) {
+      background-size: contain;
+      background-position: right -40% top 0%;
+    }
     @include media-breakpoint-up(md) {
       flex-basis: calc(50% - 30px);
     }
@@ -41,7 +45,7 @@
     &.cat-body {
     }
     &.cat-tapes {
-      background-position: right -80px top -15%;
+      background-position: right -200px top -15%;
     }
     &.cat-connectors {
     }
