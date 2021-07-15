@@ -1,5 +1,13 @@
 import Swiper from 'swiper/bundle';
 
+let swiperMenuHorizontal = new Swiper('.header-top-menu .menu-desktop-wrapper.swiper-container', {
+  freeMode: true,
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 let swiperBrands = new Swiper('#search_filters_brands .swiper-container', {
   slidesPerView: 2,
   loop: true,

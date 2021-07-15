@@ -83,15 +83,7 @@
     </div>
   </div>
   <div class="header-top-menu">
-    <div class="container">
-       <div class="row">
-        <div class="col-sm-12">
-          {hook h='displayTop2'}
-          <div class="clearfix"></div>
-        </div>
-      </div>
-
-    </div>
+    {hook h='displayTop2'}
   </div>
 <div class="header-top-mobile-search hidden-xs-up">
     {hook h='displayTop3'}

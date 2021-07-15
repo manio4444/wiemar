@@ -19,15 +19,43 @@
   }
 }
 
+// ######## DESKTOP AND MOBILE FOR SLIDER
+.menu-desktop-wrapper.swiper-container {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 12px;
+    height: 23px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAXCAYAAAA/ZK6/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABEElEQVQ4y5WTsUoDQRCGvxzH4gNIClshsFVEELRKKxIQkRRaC1skb2CTV5BU29lZpA0WCmkkEBSLa5zK3iIPIFulyN5xHLnduyl3v3935p8ZaBHO6lHSAh4DT2lDeAo8ANdRgbN6BgyBgTLym0bgF+AUOFNGNgBpAH4FjoC+MvKfn6c18ApAGTmp3nUq4AGwBv6Ukct9jyUluAtkwE8dXAic1T3gE3hXRu5DRiTO6gGwBJ6VkUmTpmyc1fMoWErpFrjw3YxGp1TDG7CIpVXY6l36AL5DhbfuQ50Rq7zbwR8qonyWzsuzVLtAysgVIEDmrD6MCrzozrv35aw+DqZUSW/KbuNuGgm8aAw8NnbOi0ZbVrxhWk3u2ZIAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 13px;
+    margin-top: 0;
+    &::after {
+      display: none;
+    }
+  }
+  .swiper-button-next {
+    transform: scaleX(-1);
+  }
+  @media (min-width: 1500px) {
+    overflow: initial;
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
+
 // ######## DESKTOP ONLY
 .menu-desktop-wrapper .top-menu {
   font-size: 14px;
   &[data-depth="0"] {
     margin: 0;
     display: flex;
-    justify-content: center;
+    @media (min-width: 1500px) {
+      justify-content: center;
+    }
     align-items: center;
-    flex-wrap: wrap;
     & > .category {
       position: relative;
       display: inline-flex;
@@ -35,19 +63,24 @@
       height: 50px;
       padding: 0 30px;
       border-radius: 7px 7px 0 0;
+      width: auto;
       &::before {
         width: 24px;
         height: 24px;
       }
 
-      &:hover {
-        background-color: #fff;
-        box-shadow: 0 4px 11.68px 4.32px rgba(0, 0, 0, 0.1);
-        &::after {
-        }
-        .sub-menu {
-          opacity: 1;
-          visibility: visible;
+      @media (hover: hover) and (min-width: 1500px) {
+        &:hover {
+          background-color: #fff;
+          box-shadow: 0 4px 11.68px 4.32px rgba(0, 0, 0, 0.1);
+
+          &::after {
+          }
+
+          .sub-menu {
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
     }
