@@ -29,7 +29,9 @@
 .page-not-found {
   .search-widget {
     form {
-      display: inline-block;
+      .category-toggle-btn {
+        display: none;
+      }
     }
   }
 }
