@@ -93,6 +93,8 @@ global_settings:
       displayLeftColumn:
         - ps_categorytree
         - ps_facetedsearch
+        - ps_newproducts
+        - ps_specials
       displaySearch:
         - ps_searchbar
       displayProductAdditionalInfo:

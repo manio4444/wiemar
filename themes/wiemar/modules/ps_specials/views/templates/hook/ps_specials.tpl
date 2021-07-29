@@ -31,9 +31,12 @@
      </a>
 
    </h2>
-     <p>{l s='Tekst pod nagłówkiem Promocja' d='Shop.Theme.Homepage'}</p>
-     <br>
-     <br>
+     <p class="featured-products-txt">
+         {l s='Tekst pod nagłówkiem Promocja' d='Shop.Theme.Homepage'}
+         <br>
+         <br>
+     </p>
+
 
      {include file="catalog/_partials/productlist.tpl" products=$products}
    <div class="text-xs-center">
